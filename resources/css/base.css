@@ -371,11 +371,11 @@ button:focus-visible {
   text-align: center;
 }
 
-.dark {
-  background-color: #242424;
-}
 .dark body {
   color: #fff;
+}
+.dark .container {
+  background-color: #242424;
 }
 .dark #skipNavigation a {
   color: #000;

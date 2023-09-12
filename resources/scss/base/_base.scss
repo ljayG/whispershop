@@ -299,10 +299,12 @@ button {
 
 // 다크모드
 .dark {
-    background-color: $Dark;
-
     body {
         color: $White;
+    }
+
+    .container {
+        background-color: $Dark;
     }
 
     #skipNavigation {

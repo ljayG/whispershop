@@ -1,4 +1,8 @@
 /* Brand Color */
+body {
+  background-color: #f6f6f6;
+}
+
 #wrapper {
   width: 100%;
   height: 100%;
