@@ -103,7 +103,7 @@ html {
     font-size: 10px;
 }
 body {
-    color: $Black;
+    color: $Primary;
     font-size: 1.4rem;
     line-height: 1;
     word-break: break-all;
@@ -293,6 +293,35 @@ button {
             top: 200px;
             line-height: 35px;
             text-align: center;
+        }
+    }
+}
+
+// 다크모드
+.dark {
+    background-color: $Dark;
+
+    body {
+        color: $White;
+    }
+
+    #skipNavigation {
+        a {
+            color: $Black;
+            background-color: $White;
+
+            &:active,
+            &:focus-visible {
+                color: $Black;
+                background: $White;
+                border-bottom: 1px solid $Gray800;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 200px;
+                line-height: 35px;
+                text-align: center;
+            }
         }
     }
 }

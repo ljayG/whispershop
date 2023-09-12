@@ -181,13 +181,14 @@
   background: url("../images/icon/product_frame.svg") repeat-x bottom center;
   background-size: contain;
 }
-.screen-mode .light button {
+.screen-mode .light-mode button {
   background-color: #fff;
+  color: #323232;
 }
-.screen-mode .dark button {
+.screen-mode .dark-mode button {
   background-color: #242424;
   color: #fff;
 }
-.screen-mode .dark button .screen-inner {
+.screen-mode .dark-mode button .screen-inner {
   padding-top: 3.3rem;
 }

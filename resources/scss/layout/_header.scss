@@ -29,3 +29,16 @@
         }
     }
 }
+
+// 다크모드
+.dark {
+    #header {
+        background-color: $Dark;
+
+        .menu-btn {
+            span {
+                background-image: url('../images/common/gnb_menu_dark.svg');
+            }
+        }
+    }
+}

@@ -171,13 +171,14 @@
         background-size: contain;
     }
 
-    .light {
+    .light-mode {
         button {
             background-color: $White;
+            color: $Primary;
         }
     }
 
-    .dark {
+    .dark-mode {
         button {
             background-color: $Dark;
             color: $White;

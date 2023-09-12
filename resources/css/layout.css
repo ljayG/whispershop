@@ -60,3 +60,10 @@
   background: url("../images/common/gnb_menu.svg") no-repeat;
   background-size: contain;
 }
+
+.dark #header {
+  background-color: #242424;
+}
+.dark #header .menu-btn span {
+  background-image: url("../images/common/gnb_menu_dark.svg");
+}
