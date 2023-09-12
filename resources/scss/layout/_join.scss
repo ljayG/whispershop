@@ -1,0 +1,28 @@
+.intro-wrap {
+    position: absolute;
+    width: 100%;
+    max-height: calc(100vh - 4.4rem);
+    top: 50vh;
+    left: 0;
+    transform: translateY(-58%);
+    overflow: hidden;
+
+    .logo {
+        padding: 0 2.4rem;
+        margin-bottom: 5.5rem;
+        font-size: 4.6rem;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -2px;
+    }
+
+    .intro-move {
+        .item {
+            animation: introMove 5s linear alternate-reverse infinite;
+
+            img {
+                width: 120%;
+            }
+        }
+    }
+}

@@ -1,0 +1,298 @@
+/* base */
+html,
+body {
+    height: 100%;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+}
+::before,
+::after,
+html,
+body,
+div,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+thead,
+tbody,
+tr,
+th,
+td,
+caption,
+address,
+article,
+aside,
+canvas,
+details,
+figure,
+figcaption,
+main,
+footer,
+header,
+menu,
+nav,
+section,
+button,
+select,
+textarea,
+input,
+form,
+fieldset,
+legend,
+label,
+a,
+span,
+strong,
+em,
+address,
+pre,
+code,
+dfn,
+small,
+i,
+b {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: inherit;
+    list-style: none;
+    font-style: normal;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    -o-box-sizing: inherit;
+}
+:before,
+:after {
+    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    -o-box-sizing: inherit;
+}
+main,
+article,
+aside,
+canvas,
+details,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+section {
+    display: block;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+body {
+    color: $Black;
+    font-size: 1.4rem;
+    line-height: 1;
+    word-break: break-all;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    scroll-behavior: smooth;
+}
+
+body,
+th,
+td,
+input,
+select,
+textarea,
+button {
+    font-family: $Font;
+    letter-spacing: -0.02rem;
+}
+[hidden],
+hr {
+    display: none;
+}
+img {
+    vertical-align: middle;
+}
+button {
+    background-color: transparent;
+    cursor: pointer;
+}
+fieldset,
+iframe {
+    width: 100%;
+}
+img,
+a,
+frame,
+iframe,
+fieldset {
+    border: 0;
+}
+a {
+    text-decoration: none;
+}
+a:active,
+a:hover,
+a:focus {
+    color: inherit;
+}
+// caption {
+//     height: 1px;
+//     overflow: hidden;
+// }
+legend,
+caption,
+.blind {
+    @include blind();
+}
+button {
+    overflow: hidden;
+    background-color: transparent;
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    border: 0px;
+    padding: 0px;
+}
+input[type='checkbox'],
+input[type='radio'] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+input[type='checkbox'],
+input[type='radio'],
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+}
+textarea {
+    resize: none;
+}
+input,
+textarea {
+    caret-color: auto;
+}
+select::-ms-expand {
+    display: none;
+}
+input::-ms-clear,
+input::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+input::search-decoration,
+input::search-cancel-button,
+input::search-results-button,
+input::search-results-decoration {
+    display: none;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+    display: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input::-webkit-calendar-picker-indicator {
+    -webkit-appearance: none;
+}
+// [tabindex='0']:focus,
+// input:focus,
+// textarea:focus,
+// select:focus {
+//     outline: 0;
+// }
+// a:focus,
+// button:focus,
+// input:focus,
+// textarea:focus,
+// select:focus {
+//     outline: 0;
+// }
+[tabindex='0'],
+a,
+button,
+input,
+textarea,
+select {
+    -webkit-tap-highlight-color: transparent;
+}
+select::-ms-expand {
+    display: none;
+}
+input[type='radio']:focus-visible + label,
+input[type='checkbox']:focus-visible + label {
+    outline: auto;
+}
+
+a,
+button {
+    &:hover,
+    &:focus-visible {
+        box-shadow: inset rgba($Violet500, 1) 0 0 0 3px;
+        outline: none;
+    }
+}
+#skipNavigation {
+    width: 100%;
+    position: absolute;
+    top: -200px;
+    left: 0;
+    margin: 0 auto;
+    z-index: 9999;
+
+    a {
+        color: $White;
+        background-color: $Black;
+        display: block;
+        height: 35px;
+        text-align: center;
+
+        &:active,
+        &:focus-visible {
+            color: $White;
+            background: $Black;
+            border-bottom: 1px solid $Gray800;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 200px;
+            line-height: 35px;
+            text-align: center;
+        }
+    }
+}

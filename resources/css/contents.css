@@ -1,0 +1,193 @@
+/* Brand Color */
+.intro-wrap {
+  position: absolute;
+  width: 100%;
+  max-height: calc(100vh - 4.4rem);
+  top: 50vh;
+  left: 0;
+  -webkit-transform: translateY(-58%);
+          transform: translateY(-58%);
+  overflow: hidden;
+}
+.intro-wrap .logo {
+  padding: 0 2.4rem;
+  margin-bottom: 5.5rem;
+  font-size: 4.6rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+.intro-wrap .intro-move .item {
+  animation: introMove 5s linear alternate-reverse infinite;
+}
+.intro-wrap .intro-move .item img {
+  width: 120%;
+}
+
+.list-bt {
+  position: relative;
+  height: 100%;
+}
+.list-bt::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2.5rem;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("../images/icon/ruler.png") repeat-y;
+  background-size: contain;
+}
+.list-bt dt .current-fs {
+  padding: 0 3.2rem 0 7rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.list-bt dt + dl {
+  margin-top: 3.5rem;
+}
+.list-bt dl .bt-select {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.5;
+  word-break: keep-all;
+  overflow: visible;
+}
+.list-bt dl .bt-select > div {
+  padding: 0.8rem 3.2rem 0.8rem 7rem;
+}
+.list-bt dl .bt-select.fs14 {
+  font-size: 14px;
+}
+.list-bt dl .bt-select.fs16 {
+  font-size: 16px;
+}
+.list-bt dl .bt-select.fs18 {
+  font-size: 18px;
+}
+.list-bt dl .bt-select.fs20 {
+  font-size: 20px;
+}
+.list-bt dl .bt-select.fs24 {
+  font-size: 24px;
+}
+.list-bt dl .bt-select.fs30 {
+  font-size: 30px;
+}
+.list-bt dl .bt-select.fs34 {
+  font-size: 34px;
+}
+.list-bt dl .bt-select.current::after {
+  background-color: #9747ff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0.1rem 1rem 0.2rem;
+          box-shadow: rgba(0, 0, 0, 0.1) 0.1rem 1rem 0.2rem;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4rem;
+  height: 0.4rem;
+  top: 50%;
+  left: -0.3rem;
+  border-radius: 0.2rem;
+  z-index: 2;
+}
+
+.screen-mode {
+  position: relative;
+}
+.screen-mode .scr-select {
+  color: #fff;
+  background-color: #8b5cf6;
+  position: absolute;
+  width: 10.4rem;
+  height: 4.9rem;
+  border-radius: 2.5rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 3;
+}
+.screen-mode .scr-select > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 4.9rem;
+}
+.screen-mode .scr-select > div::before {
+  content: "";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 0.8rem;
+  background: url("../images/icon/upDown.svg") no-repeat;
+}
+.screen-mode .screen-lst {
+  height: calc(50vh - 22px);
+  min-height: 38rem;
+}
+.screen-mode .screen-lst button {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.screen-mode .screen-lst button .screen-inner {
+  position: relative;
+  height: 100%;
+}
+.screen-mode .product {
+  padding: 2rem 4rem 3rem;
+  text-align: right;
+}
+.screen-mode .product .tit {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.48px;
+}
+.screen-mode .product .tit .short-tit {
+  margin-bottom: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 130%;
+}
+.screen-mode .product .price {
+  margin-top: 1.6rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.48px;
+}
+.screen-mode .img {
+  position: absolute;
+  width: 100%;
+  height: 20rem;
+  bottom: 0;
+  left: 0;
+  background: url("../images/icon/product_frame.svg") repeat-x bottom center;
+  background-size: contain;
+}
+.screen-mode .light button {
+  background-color: #fff;
+}
+.screen-mode .dark button {
+  background-color: #242424;
+  color: #fff;
+}
+.screen-mode .dark button .screen-inner {
+  padding-top: 3.3rem;
+}

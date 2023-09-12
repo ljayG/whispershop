@@ -1,0 +1,31 @@
+#header {
+    background-color: $White;
+    position: fixed;
+    width: 100%;
+    max-width: 79rem;
+    height: 4.4rem;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+
+    .menu-btn {
+        display: block;
+        position: absolute;
+        width: 4.4rem;
+        height: 100%;
+        top: 0;
+        right: 0.6rem;
+        z-index: 2;
+
+        span {
+            @include ir();
+            display: block;
+            width: 2.4rem;
+            height: 2.4rem;
+            margin: auto;
+            background: url('../images/common/gnb_menu.svg') no-repeat;
+            background-size: contain;
+        }
+    }
+}

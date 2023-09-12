@@ -1,0 +1,190 @@
+.list-bt {
+    position: relative;
+    height: 100%;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 2.5rem;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: url('../images/icon/ruler.png') repeat-y;
+        background-size: contain;
+    }
+
+    dt {
+        .current-fs {
+            padding: 0 3.2rem 0 7rem;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        & + dl {
+            margin-top: 3.5rem;
+        }
+    }
+
+    dl {
+        .bt-select {
+            position: relative;
+            display: block;
+            width: 100%;
+            font-weight: 600;
+            text-align: left;
+            line-height: 1.5;
+            word-break: keep-all;
+            overflow: visible;
+
+            & > div {
+                padding: 0.8rem 3.2rem 0.8rem 7rem;
+            }
+
+            &.fs14 {
+                font-size: 14px;
+            }
+
+            &.fs16 {
+                font-size: 16px;
+            }
+
+            &.fs18 {
+                font-size: 18px;
+            }
+
+            &.fs20 {
+                font-size: 20px;
+            }
+
+            &.fs24 {
+                font-size: 24px;
+            }
+
+            &.fs30 {
+                font-size: 30px;
+            }
+
+            &.fs34 {
+                font-size: 34px;
+            }
+
+            &.current::after {
+                background-color: $Accent;
+                box-shadow: rgba($Black, 0.1) 0.1rem 1rem 0.2rem;
+                content: '';
+                display: block;
+                position: absolute;
+                width: 4rem;
+                height: 0.4rem;
+                top: 50%;
+                left: -0.3rem;
+                border-radius: 0.2rem;
+                z-index: 2;
+            }
+        }
+    }
+}
+
+.screen-mode {
+    position: relative;
+
+    .scr-select {
+        color: $White;
+        background-color: $Violet500;
+        position: absolute;
+        width: 10.4rem;
+        height: 4.9rem;
+        border-radius: 2.5rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+
+        & > div {
+            @include flexbox(center);
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 4.9rem;
+
+            &::before {
+                content: '';
+                display: inline-flex;
+                width: 2.4rem;
+                height: 2.4rem;
+                margin-right: 0.8rem;
+                background: url('../images/icon/upDown.svg') no-repeat;
+            }
+        }
+    }
+
+    .screen-lst {
+        height: calc(50vh - 22px);
+        min-height: 38rem;
+
+        button {
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            .screen-inner {
+                position: relative;
+                height: 100%;
+            }
+        }
+    }
+
+    .product {
+        padding: 2rem 4rem 3rem;
+        text-align: right;
+
+        .tit {
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 120%;
+            letter-spacing: -0.48px;
+
+            .short-tit {
+                margin-bottom: 0.4rem;
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 130%;
+            }
+        }
+
+        .price {
+            margin-top: 1.6rem;
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 130%;
+            letter-spacing: -0.48px;
+        }
+    }
+
+    .img {
+        position: absolute;
+        width: 100%;
+        height: 20rem;
+        bottom: 0;
+        left: 0;
+        background: url('../images/icon/product_frame.svg') repeat-x bottom center;
+        background-size: contain;
+    }
+
+    .light {
+        button {
+            background-color: $White;
+        }
+    }
+
+    .dark {
+        button {
+            background-color: $Dark;
+            color: $White;
+
+            .screen-inner {
+                padding-top: 3.3rem;
+            }
+        }
+    }
+}

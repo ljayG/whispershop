@@ -1,0 +1,394 @@
+@charset "UTF-8";
+/* Brand Color */
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 900;
+  font-display: swap;
+  src: local("Pretendard Black"), url("../fonts/Pretendard-Black.subset.woff2") format("woff2"), url("../fonts/Pretendard-Black.subset.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 800;
+  font-display: swap;
+  src: local("Pretendard ExtraBold"), url("../fonts/Pretendard-ExtraBold.subset.woff2") format("woff2"), url("../fonts/Pretendard-ExtraBold.subset.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-display: swap;
+  src: local("Pretendard Bold"), url("../fonts/Pretendard-Bold.subset.woff2") format("woff2"), url("../fonts/Pretendard-Bold.subset.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-display: swap;
+  src: local("Pretendard SemiBold"), url("../fonts/Pretendard-SemiBold.subset.woff2") format("woff2"), url("../fonts/Pretendard-SemiBold.subset.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-display: swap;
+  src: local("Pretendard Medium"), url("../fonts/Pretendard-Medium.subset.woff2") format("woff2"), url("../fonts/Pretendard-Medium.subset.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-display: swap;
+  src: local("Pretendard Regular"), url("../fonts/Pretendard-Regular.subset.woff2") format("woff2"), url("../fonts/Pretendard-Regular.subset.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 300;
+  font-display: swap;
+  src: local("Pretendard Light"), url("../fonts/Pretendard-Light.subset.woff2") format("woff2"), url("../fonts/Pretendard-Light.subset.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 200;
+  font-display: swap;
+  src: local("Pretendard ExtraLight"), url("../fonts/Pretendard-ExtraLight.subset.woff2") format("woff2"), url("../fonts/Pretendard-ExtraLight.subset.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 100;
+  font-display: swap;
+  src: local("Pretendard Thin"), url("../fonts/Pretendard-Thin.subset.woff2") format("woff2"), url("../fonts/Pretendard-Thin.subset.woff") format("woff");
+}
+/* base */
+html,
+body {
+  height: 100%;
+  -moz-text-size-adjust: none;
+   -ms-text-size-adjust: none;
+       text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+}
+
+::before,
+::after,
+html,
+body,
+div,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+thead,
+tbody,
+tr,
+th,
+td,
+caption,
+address,
+article,
+aside,
+canvas,
+details,
+figure,
+figcaption,
+main,
+footer,
+header,
+menu,
+nav,
+section,
+button,
+select,
+textarea,
+input,
+form,
+fieldset,
+legend,
+label,
+a,
+span,
+strong,
+em,
+address,
+pre,
+code,
+dfn,
+small,
+i,
+b {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: inherit;
+  list-style: none;
+  font-style: normal;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  -o-box-sizing: inherit;
+}
+
+:before,
+:after {
+  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  -o-box-sizing: inherit;
+}
+
+main,
+article,
+aside,
+canvas,
+details,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body {
+  color: #000;
+  font-size: 1.4rem;
+  line-height: 1;
+  word-break: break-all;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  scroll-behavior: smooth;
+}
+
+body,
+th,
+td,
+input,
+select,
+textarea,
+button {
+  font-family: "Pretendard", "AppleSDGothicNeo-regular", "Malgun Gothic", "맑은 고딕", sans-serif;
+  letter-spacing: -0.02rem;
+}
+
+[hidden],
+hr {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+fieldset,
+iframe {
+  width: 100%;
+}
+
+img,
+a,
+frame,
+iframe,
+fieldset {
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active,
+a:hover,
+a:focus {
+  color: inherit;
+}
+
+legend,
+caption,
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+}
+
+button {
+  overflow: hidden;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  border: 0px;
+  padding: 0px;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+input[type=checkbox],
+input[type=radio],
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+textarea {
+  caret-color: auto;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input::search-decoration,
+input::search-cancel-button,
+input::search-results-button,
+input::search-results-decoration {
+  display: none;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::-webkit-calendar-picker-indicator {
+  -webkit-appearance: none;
+}
+
+[tabindex="0"],
+a,
+button,
+input,
+textarea,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+input[type=radio]:focus-visible + label,
+input[type=checkbox]:focus-visible + label {
+  outline: auto;
+}
+
+a:hover, a:focus-visible,
+button:hover,
+button:focus-visible {
+  -webkit-box-shadow: inset #8b5cf6 0 0 0 3px;
+          box-shadow: inset #8b5cf6 0 0 0 3px;
+  outline: none;
+}
+
+#skipNavigation {
+  width: 100%;
+  position: absolute;
+  top: -200px;
+  left: 0;
+  margin: 0 auto;
+  z-index: 9999;
+}
+#skipNavigation a {
+  color: #fff;
+  background-color: #000;
+  display: block;
+  height: 35px;
+  text-align: center;
+}
+#skipNavigation a:active, #skipNavigation a:focus-visible {
+  color: #fff;
+  background: #000;
+  border-bottom: 1px solid #333;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 200px;
+  line-height: 35px;
+  text-align: center;
+}
+
+@-webkit-keyframes introMove {
+  0% {
+    -webkit-transform: translateX(-25px);
+            transform: translateX(-25px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes introMove {
+  0% {
+    -webkit-transform: translateX(-25px);
+            transform: translateX(-25px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}

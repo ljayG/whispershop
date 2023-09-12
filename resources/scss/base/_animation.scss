@@ -1,0 +1,9 @@
+@keyframes introMove {
+    0% {
+        transform: translateX(-25px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

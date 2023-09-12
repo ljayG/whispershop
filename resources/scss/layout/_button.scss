@@ -1,0 +1,54 @@
+.btn-wrap {
+    .btn-inner {
+        padding: 0 2rem 1.9rem;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        &.btype-small {
+            height: 5.9rem;
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 5.9rem;
+            border-radius: 3rem;
+            border-width: 0.1rem;
+            border-style: solid;
+        }
+
+        &.btype-regular {
+            height: 6.6rem;
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 6.6rem;
+            border-radius: 3.3rem;
+            border-width: 0.1rem;
+            border-style: solid;
+        }
+
+        &.btclr-accent {
+            color: $White;
+            background-color: $Accent;
+            border-color: $Accent;
+        }
+
+        &.btclr-transparent {
+            color: $Accent;
+            background-color: transparent;
+            border-color: transparent;
+            border-radius: 0;
+        }
+    }
+
+    &.btm-fixed {
+        position: fixed;
+        max-width: 79rem;
+        width: 100%;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 8;
+    }
+}
