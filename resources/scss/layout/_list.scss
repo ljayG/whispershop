@@ -1,1 +1,85 @@
+.list-product {
+    & > li {
+        border-bottom: 1px solid $Gray100;
+    }
 
+    .item {
+        @include flexbox(align-c);
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+
+    .product-info {
+        flex: 1 1 auto;
+
+        .title {
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 120%;
+            letter-spacing: -1px;
+
+            .smt {
+                margin-bottom: 0.4rem;
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 130%;
+            }
+        }
+
+        .price {
+            color: $Gray900;
+            margin-top: 1.6rem;
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 130%;
+            letter-spacing: -1px;
+        }
+    }
+
+    .product-img {
+        flex: 0 0 13rem;
+        max-width: 13rem;
+        margin-left: 1.6rem;
+        text-align: center;
+
+        img {
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+
+    &.type2 {
+        display: flex;
+        flex-wrap: wrap;
+
+        & > li {
+            flex: 0 0 50%;
+            border-bottom: none;
+            box-sizing: border-box;
+        }
+
+        .item {
+            height: 100%;
+            flex: 1 1 100%;
+            flex-wrap: wrap;
+            align-content: space-between;
+
+            .product-info {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+
+            .product-img {
+                flex: 1 1 100%;
+                max-width: 100%;
+                max-height: 11rem;
+                margin: 1.6rem 0 0;
+
+                img {
+                    max-width: none;
+                    max-height: 11rem;
+                }
+            }
+        }
+    }
+}

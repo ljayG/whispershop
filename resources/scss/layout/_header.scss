@@ -1,5 +1,4 @@
 #header {
-    background-color: $White;
     position: fixed;
     width: 100%;
     max-width: 79rem;
@@ -7,6 +6,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    background-color: transparent;
     z-index: 20;
 
     .menu-btn {

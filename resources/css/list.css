@@ -1,1 +1,94 @@
 /* Brand Color */
+.list-product > li {
+  border-bottom: 1px solid #e6e6e6;
+}
+.list-product .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.list-product .product-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.list-product .product-info .title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -1px;
+}
+.list-product .product-info .title .smt {
+  margin-bottom: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 130%;
+}
+.list-product .product-info .price {
+  color: #1a1a1a;
+  margin-top: 1.6rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -1px;
+}
+.list-product .product-img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 13rem;
+          flex: 0 0 13rem;
+  max-width: 13rem;
+  margin-left: 1.6rem;
+  text-align: center;
+}
+.list-product .product-img img {
+  max-width: 100%;
+  text-align: center;
+}
+.list-product.type2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.list-product.type2 > li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  border-bottom: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.list-product.type2 .item {
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+.list-product.type2 .item .product-info {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  max-width: 100%;
+}
+.list-product.type2 .item .product-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  max-width: 100%;
+  max-height: 11rem;
+  margin: 1.6rem 0 0;
+}
+.list-product.type2 .item .product-img img {
+  max-width: none;
+  max-height: 11rem;
+}
