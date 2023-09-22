@@ -263,10 +263,15 @@ a,
 button {
     &:hover,
     &:focus-visible {
-        box-shadow: inset rgba($Violet500, 1) 0 0 0 3px;
+        box-shadow: inset rgba($Amber400, 1) 0 0 0 3px;
         outline: none;
     }
 }
+
+img {
+    max-width: 100%;
+}
+
 #skipNavigation {
     width: 100%;
     position: absolute;

@@ -2,6 +2,11 @@
 .btn-wrap .btn-inner {
   padding: 0 2rem 1.9rem;
 }
+.btn-wrap .btn-inner2 {
+  padding: 1.8rem 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 26, 26, 0)), color-stop(30%, rgba(26, 26, 26, 0.9)), to(rgba(26, 26, 26, 0.9)));
+  background: linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, rgba(26, 26, 26, 0.9) 30%, rgba(26, 26, 26, 0.9) 100%);
+}
 .btn-wrap .btn {
   display: block;
   width: 100%;
@@ -52,6 +57,28 @@
   background-color: transparent;
   border-color: transparent;
   border-radius: 0;
+}
+.btn-wrap .roundbtn {
+  background-color: #9747ff;
+  display: block;
+  width: 7rem;
+  height: 7rem;
+  margin: auto;
+  border-radius: 50%;
+}
+.btn-wrap .btnico {
+  display: block;
+  overflow: hidden;
+  font-size: 1px;
+  line-height: 0;
+  text-indent: -9999rem;
+  margin: auto;
+}
+.btn-wrap .btnico.ico-mic {
+  width: 2.4rem;
+  height: 4.1rem;
+  background: url("../images/icon/ico_mic.svg") no-repeat;
+  background-size: contain;
 }
 .btn-wrap.btm-fixed {
   position: fixed;

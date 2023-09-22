@@ -18,6 +18,12 @@ body {
         margin: auto;
         overflow-x: hidden;
     }
+
+    &.order-wrap {
+        .container {
+            background-color: #242424;
+        }
+    }
 }
 
 #contents {
@@ -98,7 +104,7 @@ body {
 
 .product-detail {
     position: relative;
-    padding-bottom: 17rem;
+    padding-bottom: 12.5rem;
 
     .sector-detail {
         padding-top: 3.9rem;
@@ -141,21 +147,17 @@ body {
         }
     }
 
-    .detail-img {
-        img {
-            max-width: 100%;
-        }
-    }
-
     .product-info {
-        padding-top: 6.8rem;
+        .prd-headtext {
+            padding: 6.8rem 3rem;
+        }
 
         .prd-topview {
-            padding: 4rem 0;
+            padding: 4rem 0.6rem;
         }
 
         .prd-inner {
-            padding: 0 3rem;
+            padding: 0 2.4rem;
         }
 
         .prd-txt1 {
@@ -192,13 +194,132 @@ body {
         }
 
         .prd-img {
-            img {
-                max-width: 100%;
-            }
-
             &.figcaption-ocr {
                 figcaption {
                     @include blind();
+                }
+            }
+        }
+
+        .prdinfo {
+            padding-bottom: 4rem;
+
+            figure {
+                margin-bottom: 4rem;
+            }
+        }
+    }
+
+    .product-notice {
+        padding: 0 2.4rem;
+
+        .note-tit {
+            color: $Gray900;
+            margin-bottom: 2.4rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 140%;
+            letter-spacing: -1px;
+        }
+
+        .note-list {
+            color: $Gray900;
+
+            & > li {
+                & + li {
+                    margin-top: 1.6rem;
+                }
+            }
+
+            .st {
+                margin-bottom: 0.7rem;
+                font-size: 1.6rem;
+                font-weight: 700;
+                line-height: 140%;
+                letter-spacing: -1px;
+            }
+
+            p {
+                font-size: 1.6rem;
+                line-height: 140%;
+                letter-spacing: -1px;
+            }
+        }
+    }
+}
+
+.order-cont {
+    position: relative;
+    padding: 3rem 2.4rem 10rem 3.4rem;
+    word-break: keep-all;
+
+    h3 {
+        color: $White;
+        margin-bottom: 4rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: -1px;
+    }
+
+    .order-talk {
+        .talk-baloon {
+            display: flex;
+        }
+
+        .talk {
+            display: flex;
+            width: auto;
+
+            dl {
+                max-width: calc(260 / 306) * 100%;
+                padding: 1.6rem 2rem;
+                transition: 0.3s all linear;
+
+                dt {
+                    @include blind();
+                }
+
+                dd {
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    line-height: 120%;
+
+                    .option {
+                        margin: 0.7rem 0 0 0.7rem;
+                    }
+                }
+            }
+
+            &.seller {
+                justify-content: flex-start;
+
+                dl {
+                    color: $White;
+                    background-color: $Violet500;
+                    justify-self: flex-start;
+                    margin-bottom: 1.6rem;
+                    border-radius: 2rem 2rem 2rem 0;
+
+                    .scaling-dots div {
+                        background: $White;
+                    }
+                }
+            }
+
+            &.purchaser {
+                justify-content: flex-end;
+
+                dl {
+                    color: $Gray900;
+                    background-color: $White;
+                    justify-self: flex-end;
+                    margin-bottom: 3rem;
+                    border-radius: 2rem 2rem 0 2rem;
+
+                    .scaling-dots div {
+                        background: $Gray900;
+                    }
                 }
             }
         }

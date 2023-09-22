@@ -26,6 +26,9 @@ body {
   margin: auto;
   overflow-x: hidden;
 }
+#wrapper.order-wrap .container {
+  background-color: #242424;
+}
 
 #contents {
   padding-top: 4.4rem;
@@ -99,7 +102,7 @@ body {
 
 .product-detail {
   position: relative;
-  padding-bottom: 17rem;
+  padding-bottom: 12.5rem;
 }
 .product-detail .sector-detail {
   padding-top: 3.9rem;
@@ -135,17 +138,14 @@ body {
   line-height: normal;
   letter-spacing: -1px;
 }
-.product-detail .detail-img img {
-  max-width: 100%;
-}
-.product-detail .product-info {
-  padding-top: 6.8rem;
+.product-detail .product-info .prd-headtext {
+  padding: 6.8rem 3rem;
 }
 .product-detail .product-info .prd-topview {
-  padding: 4rem 0;
+  padding: 4rem 0.6rem;
 }
 .product-detail .product-info .prd-inner {
-  padding: 0 3rem;
+  padding: 0 2.4rem;
 }
 .product-detail .product-info .prd-txt1 {
   font-size: 2.8rem;
@@ -174,9 +174,6 @@ body {
   line-height: 140%;
   letter-spacing: -1px;
 }
-.product-detail .product-info .prd-img img {
-  max-width: 100%;
-}
 .product-detail .product-info .prd-img.figcaption-ocr figcaption {
   position: absolute;
   width: 1px;
@@ -187,6 +184,121 @@ body {
   border: 0;
   white-space: nowrap;
   clip: rect(0, 0, 0, 0);
+}
+.product-detail .product-info .prdinfo {
+  padding-bottom: 4rem;
+}
+.product-detail .product-info .prdinfo figure {
+  margin-bottom: 4rem;
+}
+.product-detail .product-notice {
+  padding: 0 2.4rem;
+}
+.product-detail .product-notice .note-tit {
+  color: #1a1a1a;
+  margin-bottom: 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: -1px;
+}
+.product-detail .product-notice .note-list {
+  color: #1a1a1a;
+}
+.product-detail .product-notice .note-list > li + li {
+  margin-top: 1.6rem;
+}
+.product-detail .product-notice .note-list .st {
+  margin-bottom: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: -1px;
+}
+.product-detail .product-notice .note-list p {
+  font-size: 1.6rem;
+  line-height: 140%;
+  letter-spacing: -1px;
+}
+
+.order-cont {
+  position: relative;
+  padding: 3rem 2.4rem 10rem 3.4rem;
+  word-break: keep-all;
+}
+.order-cont h3 {
+  color: #fff;
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -1px;
+}
+.order-cont .order-talk .talk-baloon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.order-cont .order-talk .talk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+}
+.order-cont .order-talk .talk dl {
+  max-width: 84.9673202614%;
+  padding: 1.6rem 2rem;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+}
+.order-cont .order-talk .talk dl dt {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+}
+.order-cont .order-talk .talk dl dd {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+.order-cont .order-talk .talk dl dd .option {
+  margin: 0.7rem 0 0 0.7rem;
+}
+.order-cont .order-talk .talk.seller {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.order-cont .order-talk .talk.seller dl {
+  color: #fff;
+  background-color: #8b5cf6;
+  justify-self: flex-start;
+  margin-bottom: 1.6rem;
+  border-radius: 2rem 2rem 2rem 0;
+}
+.order-cont .order-talk .talk.seller dl .scaling-dots div {
+  background: #fff;
+}
+.order-cont .order-talk .talk.purchaser {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.order-cont .order-talk .talk.purchaser dl {
+  color: #1a1a1a;
+  background-color: #fff;
+  justify-self: flex-end;
+  margin-bottom: 3rem;
+  border-radius: 2rem 2rem 0 2rem;
+}
+.order-cont .order-talk .talk.purchaser dl .scaling-dots div {
+  background: #1a1a1a;
 }
 
 .dark #wrapper .container {
@@ -233,4 +345,253 @@ body {
 }
 .dark #header .menu-btn span {
   background-image: url("../images/common/gnb_menu_dark.svg");
+}
+
+.order-talk .talk .loading {
+  -webkit-animation-name: ani-txt;
+          animation-name: ani-txt;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  animation-direction: reverse;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+.order-talk .talk .result {
+  -webkit-animation-name: ani-txt2;
+          animation-name: ani-txt2;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  animation-direction: reverse;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes ani-txt {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    width: auto;
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes ani-txt {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    width: auto;
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@-webkit-keyframes ani-txt2 {
+  100% {
+    display: none;
+  }
+}
+@keyframes ani-txt2 {
+  100% {
+    display: none;
+  }
+}
+@-webkit-keyframes wordOpen {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes wordOpen {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.bal1 .loading {
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
+}
+.bal1 .result {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.bal2 {
+  -webkit-animation: wordOpen 0.3s forwards linear 1 3s;
+          animation: wordOpen 0.3s forwards linear 1 3s;
+  opacity: 0;
+  visibility: hidden;
+}
+.bal2 .loading {
+  -webkit-animation-delay: 3.9s;
+          animation-delay: 3.9s;
+}
+.bal2 .result {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.bal3 {
+  -webkit-animation: wordOpen 0.3s forwards linear 1 5s;
+          animation: wordOpen 0.3s forwards linear 1 5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.bal3 .loading {
+  -webkit-animation-delay: 6.5s;
+          animation-delay: 6.5s;
+}
+.bal3 .result {
+  -webkit-animation-delay: 6.6s;
+          animation-delay: 6.6s;
+}
+
+.bal4 {
+  -webkit-animation: wordOpen 0.3s forwards linear 1 7.5s;
+          animation: wordOpen 0.3s forwards linear 1 7.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.bal4 .loading {
+  -webkit-animation-delay: 8.5s;
+          animation-delay: 8.5s;
+}
+.bal4 .result {
+  -webkit-animation-delay: 8.6s;
+          animation-delay: 8.6s;
+}
+
+.bal5 {
+  -webkit-animation: wordOpen 0.3s forwards linear 1 10s;
+          animation: wordOpen 0.3s forwards linear 1 10s;
+  opacity: 0;
+  visibility: hidden;
+}
+.bal5 .loading {
+  -webkit-animation-delay: 10.9s;
+          animation-delay: 10.9s;
+}
+.bal5 .result {
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+
+.bal6 {
+  -webkit-animation: wordOpen 0.3s forwards linear 1 12s;
+          animation: wordOpen 0.3s forwards linear 1 12s;
+  opacity: 0;
+  visibility: hidden;
+}
+.bal6 .loading {
+  -webkit-animation-delay: 13.9s;
+          animation-delay: 13.9s;
+}
+.bal6 .result {
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+
+.bal7 {
+  -webkit-animation: wordOpen 0.3s forwards linear 1 15s;
+          animation: wordOpen 0.3s forwards linear 1 15s;
+  opacity: 0;
+  visibility: hidden;
+}
+.bal7 .loading {
+  -webkit-animation-delay: 16.9s;
+          animation-delay: 16.9s;
+}
+.bal7 .result {
+  -webkit-animation-delay: 17s;
+          animation-delay: 17s;
+}
+
+.bal8 {
+  -webkit-animation: wordOpen 0.3s forwards linear 1 18s;
+          animation: wordOpen 0.3s forwards linear 1 18s;
+  opacity: 0;
+  visibility: hidden;
+}
+.bal8 .loading {
+  -webkit-animation-delay: 19.9s;
+          animation-delay: 19.9s;
+}
+.bal8 .result {
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+}
+
+.bal9 {
+  -webkit-animation: wordOpen 0.3s forwards linear 1 21s;
+          animation: wordOpen 0.3s forwards linear 1 21s;
+  opacity: 0;
+  visibility: hidden;
+}
+.bal9 .loading {
+  -webkit-animation-delay: 23.9s;
+          animation-delay: 23.9s;
+}
+.bal9 .result {
+  -webkit-animation-delay: 24s;
+          animation-delay: 24s;
+}
+
+.bal10 {
+  -webkit-animation: wordOpen 0.3s forwards linear 1 25s;
+          animation: wordOpen 0.3s forwards linear 1 25s;
+  opacity: 0;
+  visibility: hidden;
+}
+.bal10 .loading {
+  -webkit-animation-delay: 25.9s;
+          animation-delay: 25.9s;
+}
+.bal10 .result {
+  -webkit-animation-delay: 26s;
+          animation-delay: 26s;
+}
+
+.bal11 {
+  -webkit-animation: wordOpen 0.3s forwards linear 1 27s;
+          animation: wordOpen 0.3s forwards linear 1 27s;
+  opacity: 0;
+  visibility: hidden;
+}
+.bal11 .loading {
+  -webkit-animation-delay: 28.9s;
+          animation-delay: 28.9s;
+}
+.bal11 .result {
+  -webkit-animation-delay: 29s;
+          animation-delay: 29s;
 }
