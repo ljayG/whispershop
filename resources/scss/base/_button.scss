@@ -41,6 +41,10 @@
             border-radius: 3.3rem;
             border-width: 0.1rem;
             border-style: solid;
+
+            .btnico {
+                margin: 1.8rem auto;
+            }
         }
 
         &.no-radius {
@@ -78,12 +82,20 @@
 
     .btnico {
         @include ir();
+        display: block;
         margin: auto;
 
         &.ico-mic {
             width: 2.4rem;
             height: 4.1rem;
             background: url('../images/icon/ico_mic.svg') no-repeat;
+            background-size: contain;
+        }
+
+        &.ico-keypad {
+            width: 4rem;
+            height: 4rem;
+            background: url('../images/icon/ico_keypad.svg') no-repeat;
             background-size: contain;
         }
     }

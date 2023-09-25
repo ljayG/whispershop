@@ -39,6 +39,9 @@
   border-width: 0.1rem;
   border-style: solid;
 }
+.btn-wrap .btn.btype-big .btnico {
+  margin: 1.8rem auto;
+}
 .btn-wrap .btn.no-radius {
   border-radius: 0;
 }
@@ -72,12 +75,19 @@
   font-size: 1px;
   line-height: 0;
   text-indent: -9999rem;
+  display: block;
   margin: auto;
 }
 .btn-wrap .btnico.ico-mic {
   width: 2.4rem;
   height: 4.1rem;
   background: url("../images/icon/ico_mic.svg") no-repeat;
+  background-size: contain;
+}
+.btn-wrap .btnico.ico-keypad {
+  width: 4rem;
+  height: 4rem;
+  background: url("../images/icon/ico_keypad.svg") no-repeat;
   background-size: contain;
 }
 .btn-wrap.btm-fixed {

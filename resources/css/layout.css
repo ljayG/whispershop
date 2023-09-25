@@ -221,12 +221,12 @@ body {
   letter-spacing: -1px;
 }
 
-.order-cont {
+.buy-cont {
   position: relative;
   padding: 3rem 2.4rem 10rem 3.4rem;
   word-break: keep-all;
 }
-.order-cont h3 {
+.buy-cont h3 {
   color: #fff;
   margin-bottom: 4rem;
   font-size: 1.8rem;
@@ -234,24 +234,24 @@ body {
   line-height: 130%;
   letter-spacing: -1px;
 }
-.order-cont .order-talk .talk-baloon {
+.buy-cont .order-talk .talk-baloon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.order-cont .order-talk .talk {
+.buy-cont .order-talk .talk {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: auto;
 }
-.order-cont .order-talk .talk dl {
+.buy-cont .order-talk .talk dl {
   max-width: 84.9673202614%;
   padding: 1.6rem 2rem;
   -webkit-transition: 0.3s all linear;
   transition: 0.3s all linear;
 }
-.order-cont .order-talk .talk dl dt {
+.buy-cont .order-talk .talk dl dt {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -262,42 +262,42 @@ body {
   white-space: nowrap;
   clip: rect(0, 0, 0, 0);
 }
-.order-cont .order-talk .talk dl dd {
+.buy-cont .order-talk .talk dl dd {
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 120%;
 }
-.order-cont .order-talk .talk dl dd .option {
+.buy-cont .order-talk .talk dl dd .option {
   margin: 0.7rem 0 0 0.7rem;
 }
-.order-cont .order-talk .talk.seller {
+.buy-cont .order-talk .talk.seller {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
-.order-cont .order-talk .talk.seller dl {
+.buy-cont .order-talk .talk.seller dl {
   color: #fff;
   background-color: #8b5cf6;
   justify-self: flex-start;
   margin-bottom: 1.6rem;
   border-radius: 2rem 2rem 2rem 0;
 }
-.order-cont .order-talk .talk.seller dl .scaling-dots div {
+.buy-cont .order-talk .talk.seller dl .scaling-dots div {
   background: #fff;
 }
-.order-cont .order-talk .talk.purchaser {
+.buy-cont .order-talk .talk.purchaser {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.order-cont .order-talk .talk.purchaser dl {
+.buy-cont .order-talk .talk.purchaser dl {
   color: #1a1a1a;
   background-color: #fff;
   justify-self: flex-end;
   margin-bottom: 3rem;
   border-radius: 2rem 2rem 0 2rem;
 }
-.order-cont .order-talk .talk.purchaser dl .scaling-dots div {
+.buy-cont .order-talk .talk.purchaser dl .scaling-dots div {
   background: #1a1a1a;
 }
 

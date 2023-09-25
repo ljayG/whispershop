@@ -83,3 +83,17 @@
         }
     }
 }
+
+.cartlist {
+    & > li {
+        & + li {
+            margin-top: 1.7rem;
+        }
+
+        &.cart-order {
+            border-bottom: 1px solid $White;
+            padding-bottom: 3rem;
+            margin-bottom: 3rem;
+        }
+    }
+}

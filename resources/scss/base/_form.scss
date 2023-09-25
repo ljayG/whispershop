@@ -1,0 +1,45 @@
+.cart-check {
+    label {
+        color: $Primary;
+        background-color: $White;
+        position: relative;
+        display: block;
+        padding: 2rem 5.9rem 2rem 2rem;
+        border-radius: 0.8rem;
+        cursor: pointer;
+
+        h4 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 120%;
+            letter-spacing: -1px;
+
+            .smt {
+                margin-bottom: 0.4rem;
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 130%;
+            }
+        }
+    }
+
+    input[type='checkbox'] {
+        &:checked + label {
+            color: $White;
+            background-color: $Accent;
+
+            &::after {
+                @include position(y);
+                content: '';
+                display: block;
+                position: absolute;
+                width: 2.7rem;
+                height: 2rem;
+                right: 2rem;
+                background: url('../images/icon/ico_check.svg') no-repeat;
+                background-size: contain;
+                z-index: 2;
+            }
+        }
+    }
+}

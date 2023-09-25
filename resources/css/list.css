@@ -92,3 +92,12 @@
   max-width: none;
   max-height: 11rem;
 }
+
+.cartlist > li + li {
+  margin-top: 1.7rem;
+}
+.cartlist > li.cart-order {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+}
