@@ -97,3 +97,13 @@
         }
     }
 }
+
+.dark {
+    .list-product {
+        .product-info {
+            .price {
+                color: $White;
+            }
+        }
+    }
+}

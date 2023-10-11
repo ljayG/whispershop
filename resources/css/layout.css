@@ -17,7 +17,14 @@
   height: 100%;
   margin: auto;
 }
+#wrapper.order-wrap {
+  background-color: #242424;
+}
 #wrapper.order-wrap .container {
+  background-color: #242424;
+}
+
+.body-order {
   background-color: #242424;
 }
 

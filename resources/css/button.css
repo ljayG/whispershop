@@ -4,8 +4,8 @@
 }
 .btn-wrap .btn-inner2 {
   padding: 1.8rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 26, 26, 0)), color-stop(30%, rgba(26, 26, 26, 0.9)), to(rgba(26, 26, 26, 0.9)));
-  background: linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, rgba(26, 26, 26, 0.9) 30%, rgba(26, 26, 26, 0.9) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 36, 0)), color-stop(30%, rgba(36, 36, 36, 0.9)), to(rgba(36, 36, 36, 0.9)));
+  background: linear-gradient(180deg, rgba(36, 36, 36, 0) 0%, rgba(36, 36, 36, 0.9) 30%, rgba(36, 36, 36, 0.9) 100%);
 }
 .btn-wrap .btn {
   display: block;

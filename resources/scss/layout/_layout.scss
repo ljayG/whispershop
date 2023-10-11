@@ -12,10 +12,16 @@
     }
 
     &.order-wrap {
+        background-color: $Dark;
+
         .container {
-            background-color: #242424;
+            background-color: $Dark;
         }
     }
+}
+
+.body-order {
+    background-color: $Dark;
 }
 
 #contents {
