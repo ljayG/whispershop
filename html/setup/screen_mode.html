@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../../resources/plugins/swiper/swiper.min.css" />
     <script src="../../resources/plugins/swiper/swiper.min.js"></script>
     <script src="../../resources/js/ui.js" defer></script>
+    <script src="../../resources/js/dark.js" defer></script>
   </head>
   <body>
     <!-- 스킵네비게이션 영역(s) -->
@@ -38,7 +39,7 @@
           </button>
         </header>
         <main id="contents">
-          <section>
+          <!-- <section>
             <h2 class="blind">화면스타일 선택</h2>
             <div class="screen-mode">
               <div class="scr-select">
@@ -73,7 +74,35 @@
                 </button>
               </div>
             </div>
+          </section> -->
+
+          <section>
+            <h2 class="blind">화면스타일 선택</h2>
+            <div class="screen-mode">
+              <input type="checkbox" class="src-input" id="screenSelect" />
+              <label class="scr-label" for="screenSelect">
+                <div class="screen-inner">
+                  <div class="blind">클릭시 화면반전모드 선택</div>
+                  <div class="product">
+                    <h3 class="scrmode-tit">일반모드 화면</h3>
+                    <h4 class="tit">
+                      <div class="short-tit">동구밭 지구살림</div>
+                      클래식 우유식빵
+                    </h4>
+                    <div class="price" aria-label="구매가격">13,000 <span class="blind">원</span></div>
+                  </div>
+                  <div class="img"></div>
+                </div>
+              </label>
+            </div>
           </section>
+          <!-- 하단 고정 버튼(s) -->
+          <div class="btn-wrap btm-fixed">
+            <div class="btn-flex">
+              <button type="button" class="btn btype-big btclr-accent no-radius fl2" onclick="location.href='../products/list_living.html';"><span>화면선택</span></button>
+            </div>
+          </div>
+          <!--// 하단 고정 버튼(e) -->
         </main>
       </div>
     </div>

@@ -1,11 +1,4 @@
-body {
-    background-color: $Gray50;
-}
-
 #wrapper {
-    width: 100%;
-    height: 100%;
-
     h1 {
         @include blind();
     }
@@ -16,7 +9,6 @@ body {
         max-width: 79rem;
         height: 100%;
         margin: auto;
-        overflow-x: hidden;
     }
 
     &.order-wrap {
@@ -28,6 +20,7 @@ body {
 
 #contents {
     padding-top: 4.4rem;
+    height: 100%;
 }
 
 .category-tit {
@@ -108,7 +101,7 @@ body {
 
     .sector-detail {
         padding-top: 3.9rem;
-        margin-top: -4.4rem;
+        margin-top: -4rem;
 
         &.cate1 {
             background-color: #d7d4d3;
@@ -250,6 +243,7 @@ body {
 
 .buy-cont {
     position: relative;
+    height: 100%;
     padding: 3rem 2.4rem 10rem 3.4rem;
     word-break: keep-all;
 
@@ -328,9 +322,46 @@ body {
 
 // 다크모드
 .dark {
+    background-color: $Dark;
+
     #wrapper {
         .container {
             background-color: $Dark;
+        }
+    }
+
+    .sector-category {
+        background-color: $Dark;
+
+        .category-tit {
+            color: $White;
+        }
+    }
+
+    .product-detail {
+        .sector-detail {
+            background-color: $Dark;
+
+            .category-tit {
+                color: $White;
+            }
+
+            .detail-title {
+                h4,
+                .price {
+                    color: $White;
+                }
+            }
+        }
+
+        .product-notice {
+            .note-tit {
+                color: $White;
+            }
+
+            .note-list {
+                color: $White;
+            }
         }
     }
 }

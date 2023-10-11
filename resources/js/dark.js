@@ -1,39 +1,40 @@
-const Wrapper = document.querySelector('#wrapper');
+// const StoredTheme = localStorage.getItem('darkTheme');
 
-// GNB Fixed
-const TopMenuPosition = Wrapper.offsetTop;
+// if (StoredTheme !== null) {
+//   if (StoredTheme === 'true') {
+//     document.documentElement.classList.add('dark');
+//   }
+// } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+//   document.documentElement.classList.add('dark');
+// }
 
-function submenuBarFixed() {
-  if (window.scrollY > TopMenuPosition) {
-    Wrapper.classList.add('fx');
-  } else {
-    Wrapper.classList.remove('fx');
-  }
-}
+// const ScreenDark = document.querySelector('#btnDark'); // 버튼 요소 가져오기
 
-submenuBarFixed();
-document.addEventListener('scroll', submenuBarFixed);
+// ScreenDark.addEventListener('click', () => {
+//   const Html = document.documentElement;
 
-const StoredTheme = localStorage.getItem('darkTheme');
+//   if (Html.classList.contains('dark')) {
+//     Html.classList.remove('dark');
+//     localStorage.setItem('darkTheme', 'false');
+//   } else {
+//     Html.classList.add('dark');
+//     localStorage.setItem('darkTheme', 'true');
+//   }
+// });
 
-if (StoredTheme !== null) {
-  if (StoredTheme === 'true') {
-    document.documentElement.classList.add('dark');
-  }
-} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-  document.documentElement.classList.add('dark');
-}
+const ScreenSelect = document.querySelector('#screenSelect'); // 버튼 요소 가져오기
 
-const ScreenDark = document.querySelector('#btnDark'); // 버튼 요소 가져오기
-
-ScreenDark.addEventListener('click', () => {
+ScreenSelect.addEventListener('click', () => {
   const Html = document.documentElement;
+  var ScreenModeTitle = document.querySelector('.scrmode-tit');
 
   if (Html.classList.contains('dark')) {
     Html.classList.remove('dark');
+    ScreenModeTitle.innerText = '일반모드 화면';
     localStorage.setItem('darkTheme', 'false');
   } else {
     Html.classList.add('dark');
+    ScreenModeTitle.innerText = '다크모드 화면';
     localStorage.setItem('darkTheme', 'true');
   }
 });

@@ -6,8 +6,13 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: transparent;
+    transition: 0.3s all linear;
     z-index: 20;
+
+    .head-wrap {
+        height: 4.4rem;
+        background-color: transparent;
+    }
 
     .menu-btn {
         display: block;
@@ -27,6 +32,11 @@
             background: url('../images/common/gnb_menu.svg') no-repeat;
             background-size: contain;
         }
+    }
+
+    @at-root .fx & {
+        background-color: $White;
+        box-shadow: rgba(0, 0, 0, 0.1) 0.3rem 0.3rem 0.3rem 0;
     }
 }
 

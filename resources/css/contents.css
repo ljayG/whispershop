@@ -145,13 +145,21 @@
   width: 100%;
   height: 100%;
 }
-.screen-mode .screen-lst button .screen-inner {
+.screen-mode .screen-inner {
   position: relative;
   height: 100%;
 }
 .screen-mode .product {
-  padding: 2rem 4rem 3rem;
+  padding: 3rem 4rem;
   text-align: right;
+}
+.screen-mode .product .scrmode-tit {
+  margin-bottom: 1.6rem;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.48px;
+  text-align: left;
 }
 .screen-mode .product .tit {
   font-size: 2.4rem;
@@ -191,4 +199,14 @@
 }
 .screen-mode .dark-mode button .screen-inner {
   padding-top: 3.3rem;
+}
+.screen-mode .scr-label {
+  display: block;
+  position: relative;
+  height: calc(100vh - 120px);
+  cursor: pointer;
+}
+.screen-mode .src-input:checked + .scr-label {
+  background-color: #242424;
+  color: #fff;
 }

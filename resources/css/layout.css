@@ -1,12 +1,4 @@
 /* Brand Color */
-body {
-  background-color: #f6f6f6;
-}
-
-#wrapper {
-  width: 100%;
-  height: 100%;
-}
 #wrapper h1 {
   position: absolute;
   width: 1px;
@@ -24,7 +16,6 @@ body {
   max-width: 79rem;
   height: 100%;
   margin: auto;
-  overflow-x: hidden;
 }
 #wrapper.order-wrap .container {
   background-color: #242424;
@@ -32,6 +23,7 @@ body {
 
 #contents {
   padding-top: 4.4rem;
+  height: 100%;
 }
 
 .category-tit {
@@ -106,7 +98,7 @@ body {
 }
 .product-detail .sector-detail {
   padding-top: 3.9rem;
-  margin-top: -4.4rem;
+  margin-top: -4rem;
 }
 .product-detail .sector-detail.cate1 {
   background-color: #d7d4d3;
@@ -223,6 +215,7 @@ body {
 
 .buy-cont {
   position: relative;
+  height: 100%;
   padding: 3rem 2.4rem 10rem 3.4rem;
   word-break: keep-all;
 }
@@ -301,8 +294,33 @@ body {
   background: #1a1a1a;
 }
 
+.dark {
+  background-color: #242424;
+}
 .dark #wrapper .container {
   background-color: #242424;
+}
+.dark .sector-category {
+  background-color: #242424;
+}
+.dark .sector-category .category-tit {
+  color: #fff;
+}
+.dark .product-detail .sector-detail {
+  background-color: #242424;
+}
+.dark .product-detail .sector-detail .category-tit {
+  color: #fff;
+}
+.dark .product-detail .sector-detail .detail-title h4,
+.dark .product-detail .sector-detail .detail-title .price {
+  color: #fff;
+}
+.dark .product-detail .product-notice .note-tit {
+  color: #fff;
+}
+.dark .product-detail .product-notice .note-list {
+  color: #fff;
 }
 
 #header {
@@ -314,8 +332,13 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-color: transparent;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
   z-index: 20;
+}
+#header .head-wrap {
+  height: 4.4rem;
+  background-color: transparent;
 }
 #header .menu-btn {
   display: block;
@@ -338,6 +361,11 @@ body {
   margin: auto;
   background: url("../images/common/gnb_menu.svg") no-repeat;
   background-size: contain;
+}
+.fx #header {
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0.3rem 0.3rem 0.3rem 0;
+          box-shadow: rgba(0, 0, 0, 0.1) 0.3rem 0.3rem 0.3rem 0;
 }
 
 .dark #header {
