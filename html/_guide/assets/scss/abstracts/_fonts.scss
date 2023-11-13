@@ -1,0 +1,78 @@
+/* A GD */
+@font-face {
+    font-family: 'gothic_a1';
+    src: url('../font/gothica1-thin-webfont.woff2') format('woff2'), url('../font/gothica1-thin-webfont.woff') format('woff'), url('../font/gothica1-thin-webfont.eot') format('opentype'), url('../font/gothica1-thin-webfont.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gothic_a1';
+    src: url('../font/gothica1-extralight-webfont.woff2') format('woff2'), url('../font/gothica1-extralight-webfont.woff') format('woff'), url('../font/gothica1-extralight-webfont.eot') format('opentype'), url('../font/gothica1-extralight-webfont.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gothic_a1';
+    src: url('../font/gothica1-light-webfont.woff2') format('woff2'), url('../font/gothica1-light-webfont.woff') format('woff'), url('../font/gothica1-light-webfont.eot') format('opentype'), url('../font/gothica1-light-webfont.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gothic_a1';
+    src: url('../font/gothica1-regular-webfont.woff2') format('woff2'), url('../font/gothica1-regular-webfont.woff') format('woff'), url('../font/gothica1-regular-webfont.eot') format('opentype'), url('../font/gothica1-regular-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gothic_a1';
+    src: url('../font/gothica1-medium-webfont.woff2') format('woff2'), url('../font/gothica1-medium-webfont.woff') format('woff'), url('../font/gothica1-medium-webfont.eot') format('opentype'), url('../font/gothica1-medium-webfont.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gothic_a1';
+    src: url('../font/gothica1-semibold-webfont.woff2') format('woff2'), url('../font/gothica1-semibold-webfont.woff') format('woff'), url('../font/gothica1-semibold-webfont.eot') format('opentype'), url('../font/gothica1-semibold-webfont.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gothic_a1';
+    src: url('../font/gothica1-bold-webfont.woff2') format('woff2'), url('../font/gothica1-bold-webfont.woff') format('woff'), url('../font/gothica1-bold-webfont.eot') format('opentype'), url('../font/gothica1-bold-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gothic_a1';
+    src: url('../font/gothica1-extrabold-webfont.woff2') format('woff2'), url('../font/gothica1-extrabold-webfont.woff') format('woff'), url('../font/gothica1-extrabold-webfont.eot') format('opentype'), url('../font/gothica1-extrabold-webfont.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gothic_a1';
+    src: url('../font/gothica1-black-webfont.woff2') format('woff2'), url('../font/gothica1-black-webfont.woff') format('woff'), url('../font/gothica1-black-webfont.eot') format('opentype'), url('../font/gothica1-black-webfont.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* KBFGD */
+@font-face {
+    font-family: 'KBFGD';
+    src: url('../font/KBFGDisplayL.woff2') format('woff2'), url('../font/KBFGDisplayL.woff') format('woff'), url('../font/KBFGDisplayL.eot') format('opentype'), url('../font/KBFGDisplayL.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KBFGD';
+    src: url('../font/KBFGDisplayM.woff2') format('woff2'), url('../font/KBFGDisplayM.woff') format('woff'), url('../font/KBFGDisplayM.eot') format('opentype'), url('../font/KBFGDisplayM.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KBFGD';
+    src: url('../font/KBFGDisplayB.woff2') format('woff2'), url('../font/KBFGDisplayB.woff') format('woff'), url('../font/KBFGDisplayB.eot') format('opentype'), url('../font/KBFGDisplayB.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+$fontFamily: 'KBFGD', 'gothic_a1', sans-serif;
+$fontFamily2: 'Consolas', sans-serif;

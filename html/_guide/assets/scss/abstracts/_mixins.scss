@@ -1,0 +1,46 @@
+@mixin clearfix() {
+    &::after {
+        content: '';
+        display: block;
+        float: none;
+        clear: both;
+        height: 0;
+        font-size: 0;
+        line-height: 0;
+        visibility: hidden;
+    }
+}
+
+@mixin blind() {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    height: 0;
+    font-size: 1px;
+    line-height: 0;
+    @include ir;
+}
+
+@mixin ir() {
+    color: transparent;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+
+@mixin textOver() {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@mixin mq($screen-width) {
+    @if $screen-width == 'tablet' {
+        @media screen and (max-width: 1200px) {
+            @content;
+        }
+    } @else if $screen-width == 'mobile' {
+        @media screen and (max-width: 768px) {
+            @content;
+        }
+    }
+}

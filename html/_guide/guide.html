@@ -1,0 +1,2617 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>UI</title>
+    <!-- <link href="./assets/images/favicon.ico" rel="shrtcut icon" /> -->
+    <link rel="stylesheet" href="./docs/css/guide.css" />
+    <link rel="stylesheet" href="./docs/css/shCore.css" />
+    <script type="text/javascript" src="./assets/js/jquery-3.6.1.min.js"></script>
+    <script src="./docs/js/shCore.js"></script>
+    <script src="./docs/js/guide.js?v=1"></script>
+    <script>
+      document.title = 'whispers shop WEB STYLE GUIDE';
+    </script>
+  </head>
+
+  <body class="guide_wrap">
+    <!-- Header -->
+    <!-- 상단 가로 스크롤 -->
+    <div class="xscroll">
+      <div class="scroll"></div>
+    </div>
+    <!-- 상단 가로 스크롤 -->
+    <header class="ia-head">
+      <div class="inr">
+        <h1 class="logo"><a href="" style="pointer-events: none">whispers shop</a></h1>
+        <ul class="link">
+          <li><a href="./ia.html" class="lk" target="_blank" title="새창열림">IA퍼블리스트</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- //Header -->
+    <!-- 본문 내용 -->
+    <div class="guide_container">
+      <h2>
+        whispers shop 웹퍼블리싱 가이드
+        <!-- <button class="tog-btn"></button> -->
+      </h2>
+      <div class="box_content" data-show="hide">본 가이드는 가이드에서 다루는 내용은 <span class="font_color01">HTML, CSS, IMAGE, JS</span> 장애인 차별 보호법에 의한 <span class="font_color01">웹 접근성 및 검색 엔진 최적화를 위한 SEO (Search Engine Optimization) </span> 등의 공통된 내용을 활용하는 데 그 목적이 있다.</div>
+      <div class="tab_area">
+        <!--- 메뉴 -->
+        <div class="menu_area">
+          <ul class="tab_menu">
+            <li class="active"><a href="javascript:void(0)">웹접근성</a></li>
+            <li><a href="javascript:void(0)">주요 페이지 가이드</a></li>
+            <li><a href="javascript:void(0)">모바일 해상도</a></li>
+            <li><a href="javascript:void(0)">SEO</a></li>
+          </ul>
+        </div>
+        <!--- // 메뉴 -->
+        <div class="box_area">
+          <!-- WAI-ARIA 1 -->
+          <div class="box">
+            <h3>한국정보화진흥원 웹 접근성 연구소(http://wah.or.kr)의 웹 접근성 정의</h3>
+            <div class="box_content type2">
+              어떠한 사용자(장애인, 노인 등), 어떠한 기술환경에서도 사용자가 전문적인 능력 없이 웹 사이트에서 제공하는 모든 정보에 접근할 수 있도록 보장하는 것.<br />
+              위 정의에 따르면 웹 접근성은 특정 대상에 한정되지 않고 모든 사용자를 대상으로 한다. 다시 말해, 소수의 사용자만을 위한 것이 아니라는 뜻이다.<br />
+              즉, 웹 접근성은 우리 모두의 문제로 봐야 하며 모두를 유익하게 하는 것이 목적이다.
+            </div>
+
+            <ul class="tabmenu" role="tablist">
+              <li><a href="#" role="tab" aria-selected="true" aria-controls="tabAccPc">WEB 접근성 지침</a></li>
+              <li><a href="#" role="tab" aria-selected="false" aria-controls="tabAccMo">모바일 APP 접근성 지침</a></li>
+            </ul>
+            <section id="tabAccPc" role="tabpanel" aria-labelledby="WEB 접근성 지침" tabindex="0">
+              <div class="btnwrap">
+                <a href="./docs/download/한국형 웹 콘텐츠 접근성 지침 2.2.pdf" class="btn1" target="_blank" title="새창열림">한국형 웹 콘텐츠 접근성 지침 2.2 다운로드</a>
+              </div>
+              <h3>한국형 웹 콘텐츠 접근성 지침 2.2 체크리스트</h3>
+              <div class="repscoll">
+                <table class="tbl2">
+                  <caption>
+                    한국형 웹 콘텐츠 접근성 체크리스트 항목(업무, 원칙 항목, 세부지침, 세부내용, 출처, 우선 순위, 비고, 직무구분으로 구분)
+                  </caption>
+                  <colgroup>
+                    <col style="width: 8%" />
+                    <col style="width: 5%" />
+                    <col style="width: 15%" />
+                    <col style="width: 33%" />
+                    <col style="width: 8%" />
+                    <col style="width: 5%" />
+                    <col style="width: 6%" />
+                    <col style="width: 5%" />
+                    <col style="width: 5%" />
+                    <col style="width: 5%" />
+                    <col style="width: 5%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="row" rowspan="2">업무</th>
+                      <th scope="row" rowspan="2">원칙 항목</th>
+                      <th scope="row" rowspan="2">세부지침</th>
+                      <th scope="row" rowspan="2">세부내용</th>
+                      <th scope="row" rowspan="2">출처</th>
+                      <th scope="row" rowspan="2">우선 순위</th>
+                      <th scope="row" rowspan="2">비고</th>
+                      <th scope="rowgroup" colspan="4">직무구분(네이버-NULI참고)</th>
+                    </tr>
+                    <tr>
+                      <th scope="row">UX기획</th>
+                      <th scope="row">UI디자인</th>
+                      <th scope="row">퍼블리셔</th>
+                      <th scope="row">개발</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>인식의 용의성</td>
+                      <td>5.1.1</td>
+                      <td class="txl">적절한 대체 텍스트 제공</td>
+                      <td class="txl">텍스트 아닌 콘텐츠는 그 의미나 용도를 이해할 수 있도록 대체 텍스트를 제공해야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr>
+                      <td>인식의 용의성</td>
+                      <td>5.2.1</td>
+                      <td class="txl">자막 제공</td>
+                      <td class="txl">멀티미디어 콘텐츠에는 자막, 원고 또는 수화를 제공해야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td></td>
+                      <td></td>
+                      <td>○</td>
+                    </tr>
+                    <tr>
+                      <td>인식의 용의성</td>
+                      <td>5.3.1</td>
+                      <td class="txl">표의 구성</td>
+                      <td class="txl">표는 이해하기 쉽게 구성해야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td>2.2 개정</td>
+                      <td></td>
+                      <td></td>
+                      <td>○</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>인식의 용의성</td>
+                      <td>5.3.2</td>
+                      <td class="txl">콘텐츠의 선형구조</td>
+                      <td class="txl">콘텐츠는 논리적인 순서로 제공해야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td>2.2 개정</td>
+                      <td></td>
+                      <td></td>
+                      <td>○</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>인식의 용의성</td>
+                      <td>5.3.3</td>
+                      <td class="txl">명확한 지시사항 제공</td>
+                      <td class="txl">지시사항은 모양, 크기, 위치, 방향, 색, 소리 등에 관계없이 인식될 수 있어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td>2.2 개정</td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>인식의 용의성</td>
+                      <td>5.4.1</td>
+                      <td class="txl">색에 무관한 콘텐츠 인식</td>
+                      <td class="txl">콘텐츠는 색에 관계없이 인식될 수 있어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>인식의 용의성</td>
+                      <td>5.4.2</td>
+                      <td class="txl">자동 재생 금지</td>
+                      <td class="txl">자동으로 소리가 재생되지 않아야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr>
+                      <td>인식의 용의성</td>
+                      <td>5.4.3</td>
+                      <td class="txl">텍스트 콘텐츠의 명도 대비</td>
+                      <td class="txl">텍스트 콘텐츠와 배경 간의 명도 대비는 4.5대 1 이상이어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>인식의 용의성</td>
+                      <td>5.4.4</td>
+                      <td class="txl">콘텐츠 간의 구분</td>
+                      <td class="txl">이웃한 콘텐츠는 구별될 수 있어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td>2.2 개정</td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="bgsec">
+                      <td>운용의 용이성</td>
+                      <td>6.1.1</td>
+                      <td class="txl">키보드 사용 보장 (PC웹)</td>
+                      <td class="txl">모든 기능은 키보드만으로도 사용할 수 있어야 한다. (PC웹)</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec">
+                      <td>운용의 용이성</td>
+                      <td>6.1.1</td>
+                      <td class="txl">누르기 동작 지원 (모바일웹)</td>
+                      <td class="txl">터치(touch) 기반 모바일 기기의 모든 컨트롤은 누르기 동작으로 제어할 수 있어야 한다. (모바일웹)</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec">
+                      <td>운용의 용이성</td>
+                      <td>6.1.2</td>
+                      <td class="txl">초점 이동</td>
+                      <td class="txl">키보드에 의한 초점은 논리적으로 이동해야 하며 시각적으로 구별할 수 있어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td>2.2 개정 강화</td>
+                      <td>○</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec">
+                      <td>운용의 용이성</td>
+                      <td>6.1.3</td>
+                      <td class="txl">조작 가능</td>
+                      <td class="txl">사용자 입력 및 컨트롤은 조작 가능하도록 제공되어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td></td>
+                    </tr>
+                    <tr class="bgsec2">
+                      <td>운용의 용이성</td>
+                      <td>6.1.4</td>
+                      <td class="txl">문자 단축키</td>
+                      <td class="txl">문자 단축키는 오동작으로 인한 오류를 방지하여야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td>2.2 신규</td>
+                      <td></td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec">
+                      <td>운용의 용이성</td>
+                      <td>6.2.1</td>
+                      <td class="txl">응답시간 조절</td>
+                      <td class="txl">시간제한이 있는 콘텐츠는 응답시간을 조절할 수 있어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td></td>
+                      <td></td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec">
+                      <td>운용의 용이성</td>
+                      <td>6.2.2</td>
+                      <td class="txl">정지 기능 제공</td>
+                      <td class="txl">자동으로 변경되는 콘텐츠는 움직임을 제어할 수 있어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="bgsec">
+                      <td>운용의 용이성</td>
+                      <td>6.3.1</td>
+                      <td class="txl">깜빡임과 번쩍임 사용 제한</td>
+                      <td class="txl">초당 3~50회 주기로 깜빡이거나 번쩍이는 콘텐츠를 제공하지 않아야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec">
+                      <td>운용의 용이성</td>
+                      <td>6.4.1</td>
+                      <td class="txl">반복 영역 건너뛰기</td>
+                      <td class="txl">콘텐츠의 반복되는 영역은 건너뛸 수 있어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec">
+                      <td>운용의 용이성</td>
+                      <td>6.4.2</td>
+                      <td class="txl">제목 제공</td>
+                      <td class="txl">페이지, 프레임, 콘텐츠 블록에는 적절한 제목을 제공해야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec">
+                      <td>운용의 용이성</td>
+                      <td>6.4.3</td>
+                      <td class="txl">적절한 링크 텍스트</td>
+                      <td class="txl">링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec2">
+                      <td>운용의 용이성</td>
+                      <td>6.4.4</td>
+                      <td class="txl">고정된 참조 위치 정보</td>
+                      <td class="txl">전자출판문서 형식의 웹 페이지는 각 페이지로 이동할 수 있는 기능이 있어야 하고, 서식이나 플랫폼에 상관없이 참조 위치 정보를 일관되게 제공&middot;유지해야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td>2.2 신규</td>
+                      <td></td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec2">
+                      <td>운용의 용이성</td>
+                      <td>6.5.1</td>
+                      <td class="txl">단일 포인터 입력 지원</td>
+                      <td class="txl">다중 포인터 또는 경로기반 동작을 통한 입력은 단일 포인터 입력으로도 조작할 수 있어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td>2.2 신규</td>
+                      <td></td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec2">
+                      <td>운용의 용이성</td>
+                      <td>6.5.2</td>
+                      <td class="txl">포인터 입력 취소</td>
+                      <td class="txl">단일 포인터 입력으로 실행되는 기능은 취소할 수 있어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td>2.2 신규</td>
+                      <td></td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec2">
+                      <td>운용의 용이성</td>
+                      <td>6.5.3</td>
+                      <td class="txl">레이블과 네임</td>
+                      <td class="txl">텍스트 또는 텍스트 이미지가 포함된 레이블이 있는 사용자 인터페이스 구성요소는 네임에 시각적으로 표시되는 해당 텍스트를 포함해야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td>2.2 신규</td>
+                      <td></td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec2">
+                      <td>운용의 용이성</td>
+                      <td>6.5.4</td>
+                      <td class="txl">동작기반 작동</td>
+                      <td class="txl">동작기반으로 작동하는 기능은 사용자 인터페이스 구성요소로 조작할 수 있고, 동작기반 기능을 비활성화할 수 있어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td>2.2 신규</td>
+                      <td></td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr>
+                      <td>이해의 용이성</td>
+                      <td>7.1.1</td>
+                      <td class="txl">기본 언어 표시</td>
+                      <td class="txl">주로 사용하는 언어를 명시해야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td></td>
+                      <td>○</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>이해의 용이성</td>
+                      <td>7.2.1</td>
+                      <td class="txl">사용자 요구에 따른 실행</td>
+                      <td class="txl">사용자가 의도하지 않은 기능 (새 창, 초점 변화 등)은 실행되지 않아야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec2">
+                      <td>이해의 용이성</td>
+                      <td>7.2.2</td>
+                      <td class="txl">찾기 쉬운 도움 정보</td>
+                      <td class="txl">도움 정보가 제공되는 경우, 각 페이지에서 동일한 상대적인 순서로 접근할 수 있어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td>2.2 신규</td>
+                      <td>○</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr>
+                      <td>이해의 용이성</td>
+                      <td>7.3.1</td>
+                      <td class="txl">오류 정정</td>
+                      <td class="txl">입력 오류를 정정할 수 있는 방법을 제공해야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr>
+                      <td>이해의 용이성</td>
+                      <td>7.3.2</td>
+                      <td class="txl">레이블 제공</td>
+                      <td class="txl">사용자 입력에는 대응하는 레이블을 제공해야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec2">
+                      <td>이해의 용이성</td>
+                      <td>7.3.3</td>
+                      <td class="txl">접근 가능한 인증</td>
+                      <td class="txl">인증 과정은 인지 기능 테스트에만 의존해서는 안 된다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td>2.2 신규</td>
+                      <td>○</td>
+                      <td></td>
+                      <td></td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec2">
+                      <td>이해의 용이성</td>
+                      <td>7.3.4</td>
+                      <td class="txl">반복 입력 정보</td>
+                      <td class="txl">반복되는 입력 정보는 자동 입력 또는 선택 입력할 수 있어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td>2.2 신규</td>
+                      <td></td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec">
+                      <td>견고성</td>
+                      <td>8.1.1</td>
+                      <td class="txl">마크업 오류 방지</td>
+                      <td class="txl">마크업 언어의 요소는 열고 닫음, 중첩 관계 및 속성 선언에 오류가 없어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec">
+                      <td>견고성</td>
+                      <td>8.2.1</td>
+                      <td class="txl">웹 애플리케이션 접근성 준수</td>
+                      <td class="txl">콘텐츠에 포함된 웹 애플리케이션은 접근성이 있어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section id="tabAccMo" role="tabpanel" aria-labelledby="모바일 APP 접근성 지침" tabindex="0" style="display: none">
+              <div class="btnwrap">
+                <a href="./docs/download/(KSX3253)모바일애플리케이션콘텐츠접근성지침2.0.docx" class="btn1" target="_blank" title="새창열림">모바일 애플리케이션 콘텐츠 접근성 지침 2.0 다운로드</a>
+              </div>
+              <h3>모바일 애플리케이션 콘텐츠 접근성 지침 2.0 체크리스트</h3>
+              <div class="repscoll">
+                <table class="tbl2">
+                  <caption>
+                    모바일 애플리케이션 콘텐츠 접근성 체크리스트 항목(업무, 원칙 항목, 세부지침, 세부내용, 출처, 우선 순위, 비고, 직무구분으로 구분)
+                  </caption>
+                  <colgroup>
+                    <col style="width: 8%" />
+                    <col style="width: 5%" />
+                    <col style="width: 15%" />
+                    <col style="width: 38%" />
+                    <col style="width: 8%" />
+                    <col style="width: 5%" />
+                    <col style="width: 6%" />
+                    <col style="width: 5%" />
+                    <col style="width: 5%" />
+                    <col style="width: 5%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="row" rowspan="2">업무</th>
+                      <th scope="row" rowspan="2">원칙 항목</th>
+                      <th scope="row" rowspan="2">세부지침</th>
+                      <th scope="row" rowspan="2">세부내용</th>
+                      <th scope="row" rowspan="2">출처</th>
+                      <th scope="row" rowspan="2">우선 순위</th>
+                      <th scope="row" rowspan="2">비고</th>
+                      <th scope="rowgroup" colspan="3">직무구분(네이버-NULI참고)</th>
+                    </tr>
+                    <tr>
+                      <th scope="row">기획</th>
+                      <th scope="row">디자인</th>
+                      <th scope="row">개발</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>인식의 용의성</td>
+                      <td>5.1</td>
+                      <td class="txl">대체 텍스트</td>
+                      <td class="txl">텍스트 아닌 콘텐츠는 대체 가능한 텍스트와 함께 제공되어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td></td>
+                      <td>○</td>
+                    </tr>
+                    <tr>
+                      <td>인식의 용의성</td>
+                      <td>5.2</td>
+                      <td class="txl">자막, 수화 등의 제공</td>
+                      <td class="txl">영상이나 음성 콘텐츠에는 동등한 내용의 자막, 원고 또는 수화가 제공되어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>인식의 용의성</td>
+                      <td>5.3</td>
+                      <td class="txl">색에 무관한 인식</td>
+                      <td class="txl">화면에 표시되는 모든 정보는 색에 관계없이 인식될 수 있어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>인식의 용의성</td>
+                      <td>5.4</td>
+                      <td class="txl">명도대비</td>
+                      <td class="txl">화면에 표시되는 모든 사용자 인터페이스 컴포넌트와 텍스트는 전경색과 배경색이 구분될 수 있도록 제공되어야 한다. (3:1 이상 제공)</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>인식의 용의성</td>
+                      <td>5.5</td>
+                      <td class="txl">명확한 지시 사항</td>
+                      <td class="txl">지시 사항은 모양, 크기, 위치, 방향, 색, 소리 등에 관계없이 인식될 수 있어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr>
+                      <td>인식의 용의성</td>
+                      <td>5.6</td>
+                      <td class="txl">알림 기능</td>
+                      <td class="txl">알림 정보는 화면 표시, 소리, 진동 등 다양한 방법으로 제공되어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td></td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec">
+                      <td>운용의 용이성</td>
+                      <td>6.1</td>
+                      <td class="txl">초점(적용, 위치와크기, 순서)</td>
+                      <td class="txl">의미나 기능을 갖는 모든 사용자 인터페이스 컴포넌트에는 초점(focus)이 적용되고, 초점은 논리적인 순서로 이동되어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec">
+                      <td>운용의 용이성</td>
+                      <td>6.2</td>
+                      <td class="txl">누르기 동작 지원</td>
+                      <td class="txl">터치(touch) 기반 모바일 기기의 모든 컨트롤은 누르기 동작으로 제어할 수 있어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec">
+                      <td>운용의 용이성</td>
+                      <td>6.3</td>
+                      <td class="txl">응답 시간 조절</td>
+                      <td class="txl">터치(touch) 기반 모바일 기기의 모든 컨트롤은 누르기 동작으로 제어할 수 있어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec">
+                      <td>운용의 용이성</td>
+                      <td>6.4</td>
+                      <td class="txl">정지 기능 제공</td>
+                      <td class="txl">자동으로 변경되는 콘텐츠는 움직임을 제어할 수 있어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec">
+                      <td>운용의 용이성</td>
+                      <td>6.5</td>
+                      <td class="txl">컨트롤의 크기와 간격</td>
+                      <td class="txl">컨트롤은 충분한 크기와 간격으로 제공되어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr>
+                      <td>이해의 용이성</td>
+                      <td>7.1</td>
+                      <td class="txl">입력 도움 (용도와 목적, 오류 알림 및 정정 방법)</td>
+                      <td class="txl">입력 서식 이용 시, 입력 오류를 방지하거나 정정할 수 있는 방법을 제공해야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td></td>
+                      <td>○</td>
+                    </tr>
+                    <tr>
+                      <td>이해의 용이성</td>
+                      <td>7.2</td>
+                      <td class="txl">사용자 인터페이스의 일관성</td>
+                      <td class="txl">사용자 인터페이스 컴포넌트들은 일관성 있게 배치되어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>이해의 용이성</td>
+                      <td>7.3</td>
+                      <td class="txl">깜밖거림의 사용 제한</td>
+                      <td class="txl">깜빡이거나 번쩍이는 콘텐츠를 제공하지 않아야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>이해의 용이성</td>
+                      <td>7.4</td>
+                      <td class="txl">자동재생 금지</td>
+                      <td class="txl">자동으로 재생되는 배경음을 사용하지 않아야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr>
+                      <td>이해의 용이성</td>
+                      <td>7.5</td>
+                      <td class="txl">예측가능성</td>
+                      <td class="txl">사용자가 의도하지 않는 화면 전환이나 이벤트 등이 실행되는 경우 사용자가 이해할 수 있는 방법으로 제공되어야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec">
+                      <td>견고성</td>
+                      <td>8.1</td>
+                      <td class="txl">폰트 관련 기능의 활용</td>
+                      <td class="txl">텍스트 콘텐츠는 운영체제에서 제공하는 폰트 관련 기능을 활용할 수 있는 방법을 제공해야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                    <tr class="bgsec">
+                      <td>견고성</td>
+                      <td>8.2</td>
+                      <td class="txl">보조 기술과의 호환성</td>
+                      <td class="txl">사용자 인터페이스 컴포넌트는 보조 기술을 이용하여 사용할 수 있도록 해야 한다.</td>
+                      <td>웹접근성 연구소</td>
+                      <td>1</td>
+                      <td></td>
+                      <td>○</td>
+                      <td>○</td>
+                      <td>○</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <h3>초점이동</h3>
+            <div class="gtxt-box">
+              논리적 순서이동<br />
+              1) 초점은 논리적 순서로 이동하도록 제공한다. (좌에서 우, 위에서 아래)<br />
+              2) 레이어 팝업 노출 시 레이어 내부로 초점이 이동한 후 닫는 경우에는 다시 레이어를 노출시킨 컨트롤(버튼)으로 초점이 이동하도록 제공한다.<br />
+              3) 초점이 논리적 순서로 이동하는 선에서 tabindex 사용을 제한한다.<br />
+              4) hideFocus, outline: none, onfocus='this.blur();' 사용 제한. 키보드 접근 시 초점이 표시되도록 제공한다.
+            </div>
+
+            <h3>정지 기능 제공</h3>
+            <div class="gtxt-box">
+              자동으로 변경되는 콘텐츠는 움직임을 제어할 수 있어야 한다.<br />
+              1) 자동으로 변경되는 슬라이드는 이전, 다음, 정지 기능을 제공해야 한다.<br />
+              2) 자동으로 변경되는 콘텐츠는 이전, 다음, 정지 기능이나 전체보기 기능을 제공해야 한다.
+            </div>
+
+            <h3>반복 영역 건너뛰기(스킵 네비게이션)</h3>
+            <div class="gtxt-box">
+              콘텐츠의 반복되는 영역은 건너뛸 수 있어야 한다.<br />
+              1) 마크업상 최 상단에 위치<br />
+              2) 건너뛰기 링크가 페이지 내에 존재<br />
+              3) 키보드 접근 시 화면에 노출<br />
+              4) "하단 메뉴로 바로 가기"와 같은 위치 정보 제공은 부적절
+            </div>
+            <section class="sect">
+              <div class="codeBox">
+                <div class="code">
+                  <pre class="brush: html">
+								<div id="skipNavigation">
+									<a href="#contents">본문 바로가기</a>
+								</div>
+									...
+								<div class="contents" id="contents"><!-- id와 스킵네비게이션의 href값이 동일 적용  -->
+									...
+								</div></pre>
+                </div>
+              </div>
+            </section>
+
+            <h3>표의 구성</h3>
+            <div class="gtxt-box">
+              표는 이해하기 쉽게 구성해야 한다.<br />
+              1) 데이터 표에 적절한 제목과 요약 정보를 제공한다.<br />
+              2) 복잡하지 않은 간단한 표로 제공하거나 scope, id, headers를 적용한다.
+            </div>
+            <section class="sect">
+              <div class="codeBox">
+                <div class="code">
+                  <pre class="brush: html">
+								<table>
+									<caption>표의 제목(구분, 내용으로 구성)</caption>
+									<thead>
+										<tr>
+											<th scope="row">구분</th>
+											<th scope="row">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td scope="col"></td>
+											<td></td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td></td>
+											<td></td>
+										</tr>
+									</tfoot>
+								</table></pre>
+                </div>
+              </div>
+            </section>
+
+            <h3>레이블 제공</h3>
+            <div class="gtxt-box">입력(input['text', 'checkbox', 'radio'], select, textarea등) 서식과 레이블을 1:1로 매칭해야 한다.<br /></div>
+            <section class="sect">
+              <div class="codeBox">
+                <div class="code">
+                  <pre class="brush: html">
+								<label for="userId">아이디</label>
+								<input type="text" id="userId"><!-- label태그의 for와 input태그의 id를 매칭해야 한다. --></pre>
+                </div>
+              </div>
+            </section>
+
+            <div class="gtxt-box">입력(input['text', 'checkbox', 'radio'], select, textarea등) 서식과 레이블을 1:1 매칭이 어려운 경우 title을 제공하여도 된다. (label 대신 title을 제공해도 됨) <br /></div>
+
+            <section class="sect">
+              <div class="codeBox">
+                <div class="code">
+                  <pre class="brush: html">
+								<div>휴대전화번호</div>
+								<select title="휴대전화 국번선택"><!-- title 제공 가능 -->
+									<option value="">...</option>
+								</select>
+								<input type="text" title="휴대전화 중간번호">
+								<input type="text" title="휴대전화 마지막번호"></pre>
+                </div>
+              </div>
+            </section>
+
+            <h3>이미지</h3>
+            <div class="gtxt-box">
+              <p>이미지 네이밍 : <span class="font_color01"> 검색엔진 로봇에 정보 제공을 위해 이미지 대체 텍스트를 제공</span></p>
+            </div>
+            <div class="img_bx">
+              <p class="img"><img src="./docs/img/dog.jpg" alt="멍뭉이" /></p>
+              <div class="text">
+                <p>이미지 파일명 최적화</p>
+                <ul>
+                  <li>1. IMG_1234.jpg <span class="font_color02">(BAD)</span></li>
+                  <li>2. dog.jpg <span class="font_color01">(OKAY)</span></li>
+                  <li>3. smile_dog.jpg <span class="font_color03">(BETTER)</span></li>
+                </ul>
+                <p>이미지 대체 텍스트를 구체적으로 작성</p>
+                <ul>
+                  <li>1. 대체 텍스트 없음 <span class="font_color02">(BAD)</span></li>
+                  <li>2. 강아지 <span class="font_color01">(OKAY)</span></li>
+                  <li>3. 웃고 있는 강아지 <span class="font_color03">(OKAY)</span></li>
+                </ul>
+              </div>
+            </div>
+            <section class="sect" data-sid="ui-layerpop">
+              <div class="codeBox">
+                <div class="code">
+                  <pre class="brush: html">
+								이미지 대체 텍스트 및 네이밍 예시
+								<img src="../guide/docs/img/smile_dog.jpg" alt="웃고 있는 강아지"></pre>
+                </div>
+              </div>
+            </section>
+
+            <div class="hint">
+              <h4>웹 콘텐츠 제작기법 참고 사이트</h4>
+              <p><a href="https://www.wah.or.kr:444/Participation/technique.asp" target="_blank" title="새창열림">https://www.wah.or.kr:444/Participation/technique.asp</a></p>
+              <p><a href="https://nuli.navercorp.com/guideline/s01/g01" target="_blank" title="새창열림">https://nuli.navercorp.com/guideline/s01/g01</a></p>
+            </div>
+
+            <h3>웹 접근성 WAI-ARIA사용 예시</h3>
+            <div class="box_content type2">
+              가능한 HTML 마크업을 웹 표준에 맞게 논리적으로 진행하고 상황에 따라 WAI-ARIA사용을 해야하는 경우 하단의 가이드 라인을 참조하여 사용하도록 한다. <br />
+              WAI-ARIA는 스크린리더 및 보조기기 등에서 접근성 및 상호 운용성을 향상시키기 위해 마크업에 <span class="font_color01">역할 (Role), 속성(Property), 상태(State)</span> 정보를 추가할 수 있도록 지원 한다. 이렇게 추가된 정보는 웹 브라우저에 의해 자동으로 해석되어 각각의 운영체제(OS)의 접근성 API로 변환되도록 설계되었다. 스크린리더 및 보조기기는 운영체제(OS)에서 제공하는 접근성 API를 통해 데스크탑 애플리케이션과 동일한 방법으로 자바스크립트 컨트롤을 인식하고 상호 작용을 하게 된다. 이것은 스크린리더 및 보조기기 사용자가 웹 애플리케이션을 사용할 때, 데스크탑 애플리케이션의 동작과 유사하게 인식하고 작동하기 때문에 보다 향상된 UX를 제공하게 된다.
+            </div>
+            <h3>Role (역활)</h3>
+            <section class="sect">
+              <div class="gtxt-box">역할(Role)은 특정 요소(Element)에 기능을 정의 페이지의 검색 영역(Search)인지 내비게이션(Navigation) 요소인지 특정 섹션의 제목(Heading) 인지 등의 명확한 기능을 부여 한다.</div>
+
+              <div class="codeBox">
+                <div class="code">
+                  <pre class="brush: html">
+								<a href="/" role="button">버튼</a>
+								<!-- 스크린리더는 A태그를 링크라 읽지만 role="button" 을 명시함으로 버튼으로 읽어 준다. --></pre>
+                </div>
+              </div>
+            </section>
+
+            <h3>Property &amp; State</h3>
+            <div class="gtxt-box">
+              속성(Property)은 요소(Element)가 기본적으로 갖고 있는 특징이나 상황을 의미한다. 폼의 입력 상자가 읽기 전용(Read Only) 인지 또는 필수 항목(Require)인지, 사용자 입력에 대해 자동 완성(Auto Complete)기능을 지원할 지 또는 드래그(Drag)가 가능한지, 팝업(has Popup)이 뜨는지, 업데이트된 (Live) 정보가 있는지 등의 상황을 사용자가 인지할 수 있도록 할 수 있다.
+              <br /><br />
+              required로 필수 입력값인지에 대한 정보 제공 aria-required="true"를 지정하면 스크린리더등의 보조기기에서 해당 항목이 필수 항목(Require)임을 알 수 있도록 제공 하며, 현재 상태 값을 알려야하는 경우 현재 하위 메뉴가 접힌 상태인지 펼쳐진 상태인지 스크린리더 사용자에게 정보를 제공 해야 할 경우 이때 aria-expanded 속성을 사용하여 접힌 상태라면 false 값을 펼쳐진 상태라면 true 값을 지정 한다.
+            </div>
+            <h3>Property (속성)</h3>
+            <section class="sect">
+              <div class="codeBox">
+                <div class="code">
+                  <pre class="brush: html">
+								<div class="id-area">
+									<label for="user-email">아이디</label>
+									<input type="email" id="user-email" aria-required="true">
+								</div>
+								<div class="pw-area">
+									<label for="user-pw">비밀번호</label>
+									<input type="password" id="user-pw" aria-required="true">
+								</div>
+								<!-- aria-required="true" 로 필수 입력 값 적용  --></pre>
+                </div>
+              </div>
+            </section>
+
+            <h3>State (상태)</h3>
+            <section class="sect">
+              <div class="codeBox">
+                <div class="code">
+                  <pre class="brush: html">
+								<ul role="tree">
+									<li role="treeitem" aria-expanded="true">
+										<a>MENU 1</a>
+										<ul id="sub-menu" role="group">
+											<li role="treeitem" aria-expanded="false">
+												<a>SUB MENU 1</a>
+											</li>
+										</ul>
+									</li>
+									<li role="treeitem" aria-expanded="false">
+										<a>MENU 2</a>
+									</li>
+								</ul>
+								<!-- aria-expanded="true" 펼침과 접혀있음을 적용 --></pre>
+                </div>
+              </div>
+            </section>
+
+            <h3>HTML요소의 기능 변경 제한</h3>
+            <div class="gtxt-box">ARIA 규칙을 이용하여 요소의 네이티브(Native) 의미를 변경을 금지한다.</div>
+            <span class="underline">EX : 예를들어 &lt;h1&gt; 요소로 마크업하고 role="button" 으로 지정하는 경우를 금지한다. </span>
+            <section class="sect">
+              <div class="codeBox">
+                <div class="code">
+                  <pre class="brush: html">
+								<h1 role="button"> 버튼 </h1>  <!-- X : 금지 -->
+								<h1><button> 버튼 </button></h1>  <!-- O : 가능 -->
+								<h1><span role="button" tabindex="0">버튼</span></h1>  <!-- O : 가능 --></pre>
+                </div>
+              </div>
+            </section>
+
+            <h3>키보드 사용보장</h3>
+            <div class="gtxt-box">사용자와 상호작용이 필요한 대화형 UI의 경우 키보드로도 접근 및 사용이 가능하도록 제공하여야 한다. 여기서 상호작용이 필요한 대화형 UI란 사용자가 클릭할 수 있는 정보나 탭 또는 드래그 앤 드롭, 슬라이드, 스크롤 등의 기능이 필요한 콘텐츠를 의미한다. 기본적으로 키보드 포커스를 받지 못하는 HTML 요소의 경우 tabindex 속성을 사용하여 키보드 포커스를 받을 수 있도록 할 수 있다. 이때 tabindex 속성에 0을 지정하면 콘텐츠의 선형화 순서대로 키보드포커스가 진입하게 되고 0보다 작은 값을 지정하면 키보드 포커스를 받을 수 없는 상태가 된다</div>
+            <section class="sect">
+              <div class="codeBox">
+                <div class="code">
+                  <pre class="brush: html">
+								<span role="button" tabindex="-1">버튼</span> <!-- 키보드 포커스 X -->
+								<span role="button" tabindex="0">버튼</span> <!-- 키보드 포커스 O --></pre>
+                </div>
+              </div>
+            </section>
+
+            <h3>Landmark Roles 종류</h3>
+            <div class="gtxt-box">웹 페이지의 각 영역을 명확하게 구분하는 목적의 Roles. 영역 역할을 지정할 수 있는 8개의 속성이 있다.</div>
+            <table class="guide_table">
+              <colgroup>
+                <col style="width: 20%" />
+                <col style="width: auto" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="row">Landmark Role</th>
+                  <th scope="row">HTML5 섹션 관련 요소</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>role="application"</td>
+                  <td>동일한 역할의 요소 없음.<br />주로 &lt;div&gt; 요소와 같이 그룹 역할을 하는 요소로 대체할 수 있다.</td>
+                </tr>
+                <tr>
+                  <td>role="banner"</td>
+                  <td>동일한 역할의 요소 없음.<br />비슷한 의미로 &lt;header&gt; 요소를 사용할 수 있으나 &lt;header role="banner"&gt;로 사용하였다 면 한 페이지에서 한 개의 &lt;header&gt; 요소만 사용하길 권장한다.</td>
+                </tr>
+                <tr>
+                  <td>role="navigation"</td>
+                  <td>&lt;nav&gt; 요소.<br />다른 페이지 또는 페이지 내 특정 영역으로 이동하는 링크 콘텐츠 영역으로 주로 메인 메 뉴 및 서브 메뉴 등에 사용할 수 있다</td>
+                </tr>
+                <tr>
+                  <td>role="main"</td>
+                  <td>&lt;main&gt; 요소.<br />본문의 주요 콘텐츠 영역으로 한 페이지 내에 1개만 사용이 가능하며, &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt; 요소의 하위 요소로 사용할 수 없다</td>
+                </tr>
+                <tr>
+                  <td>role="complementary"</td>
+                  <td>&lt;aside&gt; 요소.<br />주요 콘텐츠와 연관이 적은 의미있는 콘텐츠 영역으로 종종 사이드바로 표현할 수 있다. &lt;aside&gt; 영역에는 현재 날씨, 관련된 기사 또는 주식 정보등의 부가 콘텐츠를 포함 할 수 있다.</td>
+                </tr>
+                <tr>
+                  <td>role="form"</td>
+                  <td>&lt;form&gt; 요소.<br />폼과 관련된 요소의 모임을 표현하는 영역으로 서버에 전송될 수 있는 콘텐츠를 포함 할 수 있다.</td>
+                </tr>
+                <tr>
+                  <td>role="search"</td>
+                  <td>동일한 역할의 요소 없음.<br />검색의 역할을 담당하는 서식 영역임을 의미하며 &lt;div&gt; 또는 &lt;form&gt; 요소를 사용하는 것을 권장한다</td>
+                </tr>
+                <tr>
+                  <td>role="contentinfo"</td>
+                  <td>동일한 역할의 요소 없음.<br />비슷한 의미로 &lt;footer&gt; 요소를 사용할 수 있으나 &lt;footer role="contentinfo"&gt;로 사용하였다면 한 페이지에서 한 개의 &lt;footer&gt; 요소만 사용하길 권장한다.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="hint">
+              <h4>WAI-ARIA 관련 참고 사이트</h4>
+              <p><a href="https://www.w3.org/TR/html-aria/" target="_blank" title="새창열림">https://www.w3.org/TR/html-aria/</a></p>
+              <p><a href="https://www.w3.org/WAI/ARIA/apg/" target="_blank" title="새창열림">https://www.w3.org/WAI/ARIA/apg/</a></p>
+              <p><a href="https://developer.mozilla.org/ko/docs/Web/Accessibility/ARIA" target="_blank" title="새창열림">https://developer.mozilla.org/ko/docs/Web/Accessibility/ARIA</a></p>
+            </div>
+
+            <h3>웹 콘텐츠 접근성 지침 2.2 개정 변경점</h3>
+            <div class="box_content type2">
+              한국지능정보사회진흥원(NIA)은 2022년 12월 28일에 장애인&middot;고령자 등 정보 취약계층의 웹 접근성을 보장하기 위해 관련 국제표준 개정 사항을 반영해 국가표준 ‘한국형 웹 콘텐츠 접근성 지침(KS X OT0003)’을 개정(2022.12.28. 국립전파연구원 고시)했다.<br />
+              이번 개정은 관련 국제표준(Web Content Accessibility Guidelines 2.1/2.2)의 최신 개정내용을 반영하여, 기존 24개 검사항목에 9개 검사항목이 추가한 것이 주요 변경 사항이다.
+            </div>
+
+            <h5 class="h-tit1">기본적인 특징</h5>
+            <ul class="ulist">
+              <li>기존 2.1버전의 형태를 유지한다. 따라서 level A, AA, AAA의 평가지준을 그대로 따른다.</li>
+              <li>기존 평가 기준 중 4.1.1은 제거. 해당 지침은 파싱(parsing) 관련 내용으로 브라우저 및 보조기술의 잘못된 정보 전달을 막기 위해 HTML에서 태그의 시작과 끝이 일치해야 하고 고유한 속성 및 아이디를 가져야 하며 관련된 문법에 오류가 없어야 한다는 지침인데 현재는 보조기술 및 브라우저가 이러한 에러를 처리하는 기술이 상당히 업데이트되었기 때문에 더 이상 파싱 관련 에러가 접근성에 영향을 미칠 일이 적다고 판단했기 때문이다.</li>
+              <li>기존 평가 기준 중 2.4.7의 중요도가 레벨 a로 다루어지게 될 예정이다. 2.4.7은 키보드 사용자를 위해 각 요소의 초점이 반드시 시각적으로 보여져야 한다는 내용인데 기존에는 레벨 AA였으나 저시력 사용자나 키보드만을 사용해야 하는 사용자의 경우 포커스가 없으면 키보드 초점의 현재 위치 자체를 알 수 없기 때문에 더욱 중요한 기준으로 올린 것이다.</li>
+            </ul>
+
+            <h5 class="h-tit1">9가지의 새롭게 추가된 평가 기준</h5>
+            <ul class="ulist">
+              <li>
+                <strong>2.4.11 초점 표시기:</strong> 키보드로 초점을 이동했을 때 2.4.7에서 명시하고 있는 단순히 포커스가 시각적으로 보여야 한다는 기준을 넘어서 현재 보여지는 초점이 명확해야 한다는 지침이다. 이 지침을 충족하기 위해서는 초점 표시기의 명도대비가 적어도 펭지 배경색과 비교했을 때 3:1 이상이어야 하고 명확한 초점 표시기 제공을 위한 초점의 최소 크기도 주위와 비교했을 때 적어도 1픽셀은 더 두꺼워야 한다고 정의하고 있기 때문에 확실히 기존 지침보다는 세분화된 원칙을 제공하고 있다. 게다가 초점이 표시되고 있는 곳과 그렇지 않은 곳 사이의 최소 명도대비 역시 3:1을 유지해야 한다고 명시를 하고 있어서 기존 1.4.11 텍스트가 아닌 명도대비 지침에서의 상태에 따른 상호 작용 가능한 컨트롤의 명도대비 기준을 뛰어넘는 것이다.
+                <div style="margin-top: 8px"><img src="./assets/images/img_wcag1.png" alt="키보드 초점 시각화 향상을 위한 다양한 초점 표현 방식 예시" /></div>
+                <p style="margin-top: 8px">
+                  키보드 초점 시각화 향상은 키보드 초점의 가시성을 높이기 위한 성공 기준이다. 적합성 수준은 Level AA이다.<br />
+                  키보드 초점 가시성을 높이기 위해, 먼저 최소 초점 표시 영역의 크기는 포커스 된 컨트롤의 직사각형 둘레 중 긴 쪽을 기준으로 두 배 이상이어야 한다. 계량 단위는 CSS 픽셀을 기준으로 한다. 초점 표시 영역의 명도 대비는 포커스 되지 않은 요소와 인접한 요소보다 최소 3:1의 명도 대비를 갖는다. 혹은 초점 표시 영역의 최소 두께가 다른 요소들에 비해 2픽셀 이상이어야 한다.
+                </p>
+              </li>
+              <li><strong>2.4.12 &amp; 2.4.13 중첩되지 않는 초점:</strong> 해당 주 지침은 level AA, AAA 기준으로 나뉘어지는데 쿠키 팝업과 같은 비모달 팝업, 상단에 고정되어 있는 콘텐츠 등이 표시되는 경우 기존 페이지 콘텐츠 위에 일부가 중첩되어 표시되면서 키보드 초점의 일부 또는 전체가 중첩되면 안 된다는 것이다. AA는 일부 초점이 가려지더라도 초점의 일부가 보이면 통과이고 AAA는 초점 전체체가 가려지지 않아야 하고 위에서 살펴본 2.4.11 초점 표시기의 지침을 만족하면서 크기가 적어도 2픽셀은 두꺼워야 하고 초점 표시기 자체의 명도 대비 역시 4.5:1이 되어야 통과이다.</li>
+              <li><strong>드래그 동작:</strong> 드래그 동작은 특정 요소를 원하는 곳으로 드래그 하기 위해서 중간에 손뗌 없이 정확한 곳까지 움직여야 하는 정교한 동작이 필요로 한다. 따라서 운동 장애가 있거나 손이 불편할 경우 해당 작업을 하기란 상당히 어렵다. 따라서 드래그 동작으로만 특정 기능을 수행하도록 하면 안 된다는 것이 이 지침의 핵심이다.</li>
+              <li><strong>2.5.8 컨트롤 크기:</strong> 해당 지침은 2.5.5에서 이미 정의하고 있는, 상호 작용이 가능한 컨트롤 크기는 적어도 44 CSS 픽셀의 간격을 유지해야 한다는 AAA 지침에 최소 AA 기준을 추가한 것으로 적어도 24픽셀의 간격은 유지해야 한다는 것이 핵심이다. 대부분 법적으로는 level AA 수준을 만족하면 어느정도 접근성 기준으로 충족하는 것으로 인정하기 때문에 AAA 기준은 꼭 개선해야 하는 항목으로는 보지 않는 경우가 많은데 이를 고려한 지침으로 보인다.</li>
+              <li><strong>3.2.6 일관된 도움말 제공:</strong> 사이트의 여러 페이지에 동일한 연락처 정보나 기타 도움말과 관련된 콘텐츠를 표시할 때 상대적으로 동일한 위치에 게시하라는 것이다. 이 지침은 발달장애인을 위한 것으로 같은 사이트의 여러 페이지를 탐색하더라도 도움말 콘텐츠를 쉽게 찾을 수 있을 수 있도록 하자는 것이다.</li>
+              <li><strong>3.3.7 &amp; 3.3.8 접근 가능한 인증:</strong> 해당 지침 역시 level AA, AAA로 나뉘어진다. 로그인, 이중 인증과 같이 본인임을 확인하는 스텝을 필요로 할 경우 발달장애인을 고려하여 아이디와 비밀번호를 직접 입력하지 않고도 비밀번호 관리 도구나 스마트폰과 같은 다른 디바이스를 사용한 큐알 코드 인증, 지문 혹은 페이스 아이디 인증 등 여러 방법을 제공해야 한다는 내용이다. 만약 비밀번호 관리 도구 등에서 비밀번호를 복사하여 붙여 넣을 수 없거나 특정 조건에 해당하는 이미지 맞추기, 조건에 맞는 글자 입력 등과 같은 인지 작용을 필요로 하는 캡차를 제공하는 경우 해당 접근성 기준을 통과하지 못하게 된다. 다만 level AA에서는 광고 차단이나 혹은 비밀번호를 여러 번 틀렸을 때의 인증 목적 등으로 캡차를 사용하는 경우는 예외가 인정된다.</li>
+              <li><strong>3.3.9 중복 입력:</strong> 청구지 주소, 배송받을 주소와 같이 상황에 따라 같은 정보를 입력할 수도 있는 조건에서 사용자가 반복된 정보를 되풀이하여 입력하지 않도록 대체 수단을 제공해야 한다는 지침이다. 청구지 주소와 동일과 같은 체크상자를 두어서 필요 시 사용할 수 있도록 하는 것은 좋은 사례에 해당한다.</li>
+            </ul>
+
+            <div class="hint">
+              <h4>개정된 한국형 웹 콘텐츠 접근성 지침 관련 참고 사이트</h4>
+              <p><a href="https://velog.io/@mimizl/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90#%EA%B0%9C%EC%A0%95%EB%90%9C-%ED%95%9C%EA%B5%AD%ED%98%95-%EC%9B%B9-%EC%BD%98%ED%85%90%EC%B8%A0-%EC%A0%91%EA%B7%BC%EC%84%B1-%EC%A7%80%EC%B9%A8" target="_blank" title="새창열림">https://velog.io/@mimizl/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90#%EA%B0%9C%EC%A0%95%EB%90%9C-%ED%95%9C%EA%B5%AD%ED%98%95-%EC%9B%B9-%EC%BD%98%ED%85%90%EC%B8%A0-%EC%A0%91%EA%B7%BC%EC%84%B1-%EC%A7%80%EC%B9%A8</a></p>
+              <p><a href="https://nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=90549&bcIdx=25083&parentSeq=25083" target="_blank" title="새창열림">https://nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=90549&bcIdx=25083&parentSeq=25083</a></p>
+            </div>
+          </div>
+          <!-- // WAI-ARIA 1 -->
+
+          <!-- 주요 페이지 가이드 정의 2(s) -->
+          <div class="box">
+            <ul class="tabmenu" role="tablist">
+              <li><a href="#" role="tab" aria-selected="true" aria-controls="basicInfo">기본 정의</a></li>
+              <li><a href="#" role="tab" aria-selected="false" aria-controls="directoryInfo">디렉토리구조</a></li>
+            </ul>
+            <!-- 기본 정의(s) -->
+            <section id="basicInfo" role="tabpanel" aria-labelledby="기본 정의" tabindex="0">
+              <h3>HTML 정의</h3>
+              <div class="box_content type2">
+                신규 페이지 생성시<span class="font_color01">DOCTYPE</span>은 <span class="font_color01">HTML5</span>이며, 파일<span class="font_color01"> 인코딩은 UTF-8</span>로 생성 하고, 페이지 생성 및 유지보수 진행시 하단 코드를 참고하여 진행한다.<br />
+                검색 엔진 최적화를 위한 <span class="font_color01">SEO (Search Engine Optimization)</span>를 위해 <span class="font_color01">title</span> 태그 <span class="font_color01">meta description 태그</span>를 제공 한다.<br />
+                추가되는 <span class="font_color01">css</span>는 <span class="font_color01">style.css</span> 하단에 추가되는 해당 매뉴의 <span class="font_color01">css</span> 를 위치하며, <span class="font_color01">js</span>파일은 <span class="font_color01">css</span> 보다 하단에 위치한다.
+              </div>
+              <section class="sect">
+                <h3 class="hdt">기본 레이아웃</h3>
+                <!-- 코드 삽입 -->
+                <div class="codeBox">
+                  <div class="code">
+                    <pre class="brush: html">
+								&lt;!doctype html&gt;
+								&lt;html lang="ko"&gt;
+									&lt;head&gt;
+										&lt;meta charset="UTF-8" /&gt;
+										&lt;meta http-equiv="X-UA-Compatible" content="ie=edge" /&gt;
+										&lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" /&gt;
+										&lt;title&gt;UI&lt;/title /&gt;
+										&lt;meta name="format-detection" content="telephone=no" /&gt;
+										&lt;meta name="description" content="whispers shop SEO 최적화를 위한 메타 디스크립션 제공" /&gt;
+										&lt;meta property="og:type" content="website" /&gt;
+										&lt;meta property="og:title" content="페이지 제목" /&gt;
+										&lt;meta property="og:description" content="whispers shop SEO 최적화를 위한 메타 디스크립션 제공" /&gt;
+										&lt;meta property="og:image" content="http://www.mysite.com/myimage.jpg" /&gt;
+										&lt;meta property="og:url" content="https://www.mysite.com" /&gt;
+										&lt;meta property="og:site_name" content="www.mysite.com" /&gt;
+										&lt;link href="../../img/common/favicon.png" rel="shrtcut icon" /&gt;
+										&lt;link href="../../img/common/favicon.png" rel="apple-touch-icon" /&gt;
+										&lt;link rel="stylesheet" href="../../css/style.css" /&gt;
+										&lt;script src="../../js/jquery-3.6.1.min.js"&gt;&lt;/script&gt;
+										&lt;script src="../../js/jquery-ui.js"&gt;&lt;/script&gt;
+										&lt;script src="../../js/jquery.ui.touch-punch.js"&gt;&lt;/script&gt;
+										&lt;link rel="stylesheet" href="../../plugins/swiper/swiper.css" /&gt;
+										&lt;script src="../../plugins/swiper/swiper.js"&gt;&lt;/script&gt;
+										&lt;script src="../../js/ui.js"&gt;&lt;/script&gt;
+									&lt;/head&gt;
+									&lt;body&gt;
+										&lt;!-- 스킵네비게이션 영역(s) --&gt;
+										&lt;div id="skipNavigation"&gt;
+											&lt;a href="#contents"&gt;본문 바로가기&lt;/a&gt;
+										&lt;/div&gt;
+										&lt;!--// 스킵네비게이션 영역(e) --&gt;
+										&lt;div calss="wrapper" id="wrapper"&gt;
+											&lt;!-- 헤더 영역(s) --&gt;
+											&lt;include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-sch,is-gnb","title":"페이지타이틀"}'&gt;&lt;/include&gt;
+											&lt;!--// 헤더 영역(e) --&gt;
+											&lt;!-- 메뉴 영역(s) --&gt;
+											&lt;include class="gnb" src="../inc/gnb.html"&gt;&lt;/include&gt;
+											&lt;!--// 메뉴 영역(e) --&gt;
+										
+											&lt;!---------------------------- 바디 - 여기위로는 템플릿영역 ----------------------------&gt;
+										
+											&lt;!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 --&gt;
+											&lt;!-- main : 메인/공통 등 추가 --&gt;
+											&lt;main class="container page myp info" id="container"&gt;
+											
+												&lt;!-- 본문 영역 --&gt;
+												&lt;div class="contents" id="contents"&gt;
+													&lt;p&gt;본문&lt;/p&gt;
+												&lt;/div&gt;
+												
+											&lt;/main&gt;
+										
+											&lt;!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 --&gt;
+
+											&lt;script&gt;
+												&lt;!--해당페이지 스크립트 위치--&gt;
+												$(document).ready(function(){
+													console.log('메시지');
+												});
+											&lt;/script&gt;
+
+											&lt;!---------------------------- 바디 - 여기밑으로 템플릿영역 ----------------------------&gt;
+										
+											&lt;!-- 고정메뉴 --&gt;
+											&lt;include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'&gt;&lt;/include&gt;
+										
+											&lt;!-- 하단 영역(s) --&gt;
+											&lt;include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'&gt;&lt;/include&gt;
+											&lt;!--// 하단 영역(e) --&gt;
+										
+										&lt;/div&gt;
+									&lt;/body&gt;
+								&lt;/html&gt;</pre
+                    >
+                  </div>
+                </div>
+                <!-- // 코드 삽입 -->
+              </section>
+
+              <h3 id="css">CSS 정의</h3>
+              <div class="gtxt-box">CSS는 페이지 로딩시 불필요한 <span class="font_color01">RESOURCE</span>를 줄이기 위해서 <span class="font_color01"> style.css 를 제외한 </span>각 카테고리별 css 를 별도의 css를 생성하여 사용하고 <span class="font_color01"> base.css 는 style.css 에 @import url(base.css)</span> 하여 배치한다. <span class="font_color01">Library</span>를 사용 할 경우 <span class="font_color01">Library css</span> 는 <span class="font_color01">style.css 파일보다 위에</span> 위치한다.</div>
+              <section class="sect">
+                <!-- 코드 삽입 -->
+                <div class="codeBox">
+                  <h4>CSS import</h4>
+                  <div class="code">
+                    <pre class="brush: html">								&lt;link rel="stylesheet" href="../../css/style.css"&gt;</pre>
+                  </div>
+
+                  <div class="code">
+                    <pre class="brush: html">
+								// style.css 파일에서 임포트
+								@charset "utf-8";
+								@import url("./base.css"); /* 초기화, 폰트 */
+								@import url("./layout.css"); /* 공통 레이아웃 */
+								@import url("./component.css"); /* 공통 UI components */</pre
+                    >
+                  </div>
+                  <h4>일반페이지 작업 - <a class="lk" href="../guide/docs/img/css_sample2.png" target="_blank">SS</a></h4>
+                  <div class="code">
+                    <pre class="brush: html">
+								// 메인 페이지는 .content.main에 일반 페이지는 .content.message" 식으로 class 작명(짧게) 후 상속
+								
+								// 예를들어 KB마음더하기 메인, 단체메인
+								.content.main{}
+								.content.main--group{}
+
+								// KB마음더하기 마음스토리, 단체소식 이런식으로
+								.content.wide.pt-none{} 
+								.content.wide{}</pre
+                    >
+                  </div>
+                </div>
+                <!-- // 코드 삽입 -->
+              </section>
+              <h3>javascript 정의</h3>
+              <div class="gtxt-box">
+                UI 스크립트는 <span class="font_color01">ui.js</span> 파일에 작성하며, 라이브러리 사용의 경우 <span class="font_color01">library.js</span>해당 파일 <span class="font_color01">ui.js 파일보다 위에 위치시킨다. </span>
+                <!-- 공통 js가 아닐 경우 <span class="font_color01">RESOURCE</span>를 줄이기 위해서 해당 페이지에 별도의 <span class="font_color01">function</span>을 생성하도록 해서 제작한다.  -->
+              </div>
+              <section class="sect">
+                <!-- 코드 삽입 -->
+                <div class="codeBox">
+                  <div class="code">
+                    <pre class="brush: html">
+								&lt;script src="../../js/library.js"&gt;&lt;/script&gt; 
+								&lt;script src="../../js/ui.js"&gt;&lt;/script&gt;</pre
+                    >
+                  </div>
+                </div>
+                <!-- // 코드 삽입 -->
+              </section>
+              <h3>주석처리</h3>
+              <div class="gtxt-box">
+                <span class="font_color01">마크업</span>진행시 주석처리 정의 : 주석은 HTML 작업시 해당 section 구분마다 주석처리를 해주며, <span class="font_color01">수정및 ISSUE</span>발생시 주석처리를 한다.<br />
+                <span class="font_color01">개발에 전달 해야할 ISSUE 혹은 수정시 </span> 발생시 <span class="font_color01">Develop 약자인 [D] 의 약자</span> 로 해당하는 부분에 내용과 시작 종료일자를 함께 작성 한다.
+              </div>
+              <section class="sect">
+                <!-- 코드 삽입 -->
+                <div class="codeBox">
+                  <div class="code">
+                    <pre class="brush: html">
+								&lt;!-- [D] 2021-12-31 클래스.sam 추가,문구변경 --&gt;
+								<li class="sam">
+									<span class="input a"><input type="text" placeholder="입력하세요"></span>
+								</li></pre>
+                  </div>
+                </div>
+                <!-- // 코드 삽입 -->
+              </section>
+
+              <!-- 네이밍 정의 2 -->
+              <h3>네임 정의</h3>
+              <div class="box_content type2">클래스 네이밍의 2개 이상의 단어를 조합할 경우<span class="font_color01">하이픈" - "</span>으로 지정하고, 이미지 네이밍은 <span class="font_color01">언더스코어" _ "</span>로 지정한다. 그이상의 단어 조삽시 최초 하이픈" - " 그 뒤에 단어는 <span class="font_color01">Camel 기법(낙타)</span>으로 진행한다.</div>
+              <section class="sect">
+                <!-- 코드 삽입 -->
+                <div class="codeBox">
+                  <div class="code">
+                    <pre class="brush: html">
+								네이밍 사용 예시
+								&lt;div class="guide-container"&gt;
+								&lt;div class="guide-contentBox"&gt;
+								&lt;img src="images_images" alt="이미지"&gt; </pre
+                    >
+                  </div>
+                </div>
+                <!-- // 코드 삽입 -->
+              </section>
+
+              <h3>예약어 정의</h3>
+              <div class="gtxt-box">
+                <p>예약어 : <span class="font_color01">공통, 레이아웃, 에 사용되는 class의 경우 단톡 정의를 금지하고, 사용할 경우 부모 클래스 하단에 상속을 태우는 방식으로 진행</span></p>
+              </div>
+              <section class="sect">
+                <!-- 코드 삽입 -->
+                <div class="codeBox">
+                  <div class="code">
+                    <pre class="brush: html">
+								예약어 추가될 예정
+								&lt;main class="main"&gt; 메인 &lt;/main&gt;
+							</pre
+                    >
+                  </div>
+                </div>
+                <!-- // 코드 삽입 -->
+              </section>
+
+              <div class="gtxt-box">
+                <p>예약어2 : <span class="font_color01"> 하단의 class는 화면 레이아웃의 class로 사용을 되도록 사용을 금지한다</span></p>
+              </div>
+              <section class="sect">
+                <!-- 코드 삽입 -->
+                <div class="codeBox">
+                  <div class="code">
+                    <pre class="brush: html">
+								예약어2
+								&lt;div id="wrapper"&gt;
+									&lt;header id="header"&gt;
+									&lt;nav id="nav"&gt;
+									&lt;main id="container"&gt;
+									&lt;div id="contents"&gt;
+									&lt;footer id="footer"&gt; </pre
+                    >
+                  </div>
+                </div>
+                <!-- // 코드 삽입 -->
+              </section>
+              <!-- // 네이밍 정의 2 -->
+            </section>
+            <!--// 기본 정의(e) -->
+
+            <!-- 디렉토리구조(s) -->
+            <section id="directoryInfo" role="tabpanel" aria-labelledby="디렉토리구조" tabindex="0" style="display: none">
+              <h3>Devices 검수</h3>
+              <div class="box_content type2">
+                <span class="font_color01">Devices 검수</span>는 제공되는 Devices를 대상으로 검수를 진행하도록 하며, 그 이외의 미제공 되는 Devices의 경우 브라우저에서 제공되는 해상도를 포함하여 검수진행한다.
+                <!-- 사파리 브라우저 2012년 08월 21일자로 윈도우 지원 중단 -->
+              </div>
+              <h3>기본폴더 구조</h3>
+              <div class="example box_content type2"><span class="font_color01">폴더구조</span>는 별도 협의된 구조가 없는 관계로 아래의 폴더구조로 제작되었으며, 필요시<span class="font_color01"> 변경 및 추가 </span>될 수 있있다.</div>
+
+              <h3>브랜드Pay 폴더 구조</h3>
+              <div class="example box_content type3">
+                <ul class="jqueryFileTree">
+                  <li class="directory">
+                    pay
+                    <ul class="jqueryFileTree">
+                      <li class="directory">html</li>
+                      <li class="directory">
+                        static
+                        <ul class="jqueryFileTree">
+                          <li class="directory">animation (Lottie 파일, gif 애니메이션 파일)</li>
+                          <li class="directory">css</li>
+                          <li class="directory">fonts</li>
+                          <li class="directory">img</li>
+                          <li class="directory">
+                            js
+                            <ul class="jqueryFileTree">
+                              <li class="directory">libs (js 라이브러리)</li>
+                            </ul>
+                          </li>
+                          <li class="directory">scss (whispers shop 고도화 프로젝트 작업 사용. 오픈 후 유지보수 시 사용하지 않음)</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <h3>KB마음더하기 폴더 구조</h3>
+              <!-- 성금서비스 -->
+              <div class="example box_content type3">
+                <ul class="jqueryFileTree">
+                  <li class="directory">
+                    donation
+                    <ul class="jqueryFileTree">
+                      <li class="directory">html</li>
+                      <li class="directory">
+                        static
+                        <ul class="jqueryFileTree">
+                          <li class="directory">animation (Lottie 파일, gif 애니메이션 파일)</li>
+                          <li class="directory">css</li>
+                          <li class="directory">fonts</li>
+                          <li class="directory">images (FAQ 이미지)</li>
+                          <li class="directory">img</li>
+                          <li class="directory">
+                            js
+                            <ul class="jqueryFileTree">
+                              <li class="directory">libs (js 라이브러리)</li>
+                            </ul>
+                          </li>
+                          <li class="directory">scss (whispers shop 고도화 프로젝트 작업 사용. 오픈 후 유지보수 시 사용하지 않음)</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <h3>포탈 폴더 구조</h3>
+              <!-- 포탈  -->
+              <div class="example box_content type3">
+                <ul class="jqueryFileTree">
+                  <li class="directory">
+                    portal
+                    <ul class="jqueryFileTree">
+                      <li class="directory">html</li>
+                      <li class="directory">
+                        static
+                        <ul class="jqueryFileTree">
+                          <li class="directory">animation (Lottie 파일, gif 애니메이션 파일)</li>
+                          <li class="directory">css</li>
+                          <li class="directory">fonts</li>
+                          <li class="directory">images</li>
+                          <li class="directory">
+                            js
+                            <ul class="jqueryFileTree">
+                              <li class="directory">libs (js 라이브러리)</li>
+                            </ul>
+                          </li>
+                          <li class="directory">plugins (플러그인)</li>
+                          <li class="directory">scss (whispers shop 고도화 프로젝트 작업 사용. 오픈 후 유지보수 시 사용하지 않음)</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <h3>관리센터 폴더 구조</h3>
+              <!-- 관리센터 -->
+              <div class="example box_content type3">
+                <ul class="jqueryFileTree">
+                  <li class="directory">
+                    stdpay
+                    <ul class="jqueryFileTree">
+                      <li class="directory">
+                        static
+                        <ul class="jqueryFileTree">
+                          <li class="directory">
+                            mms
+                            <ul class="jqueryFileTree">
+                              <li class="directory">
+                                css
+                                <ul class="jqueryFileTree">
+                                  <li class="file ext_txt">busy-load-0.1.1.min.css (busy-load)</li>
+                                  <li class="file ext_txt">fullCalendar.min.css (달력)</li>
+                                  <li class="file ext_txt">jquery-confirm.css (jquery-confirm)</li>
+                                  <li class="file ext_txt">jquery-ui.min.css (jquery-UI)</li>
+                                  <li class="file ext_txt">jquery.mCustomScrollbar.min.css (스크롤바)</li>
+                                  <li class="file ext_txt">style.css (페이지스타일)</li>
+                                </ul>
+                              </li>
+                              <li class="directory">fonts (폰트)</li>
+                              <li class="directory">images (이미지)</li>
+                              <li class="directory">
+                                js
+                                <ul class="jqueryFileTree">
+                                  <li class="directory">crypto</li>
+                                  <li class="directory">moment</li>
+                                  <li class="file ext_txt">aesCryptUtil.js</li>
+                                  <li class="file ext_txt">busy-load-0.1.1.min.js</li>
+                                  <li class="file ext_txt">comutil.js</li>
+                                  <li class="file ext_txt">fullCalendar.min.js</li>
+                                  <li class="file ext_txt">jquery-1.12.0.min.js</li>
+                                  <li class="file ext_txt">jquery-confirm-3.3.4.min.js</li>
+                                  <li class="file ext_txt">jquery-ui.min.js</li>
+                                  <li class="file ext_txt">jquery.mCustomScrollbar.concat.min.js</li>
+                                  <li class="file ext_txt">jquery.mtz.monthpicker.js</li>
+                                  <li class="file ext_txt">script.js</li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <h3>어드민 폴더 구조</h3>
+              <!-- 어드민 -->
+              <div class="example box_content type3">
+                <ul class="jqueryFileTree">
+                  <li class="directory">
+                    admin
+                    <ul class="jqueryFileTree">
+                      <li class="directory">
+                        html
+                        <ul class="jqueryFileTree">
+                          <li class="directory">payment ()</li>
+                        </ul>
+                      </li>
+                      <li class="directory">
+                        static
+                        <ul class="jqueryFileTree">
+                          <li class="directory">
+                            admin
+                            <ul class="jqueryFileTree">
+                              <li class="directory">
+                                css
+                                <ul class="jqueryFileTree">
+                                  <li class="directory">fonts (폰트)</li>
+                                  <li class="file ext_txt">contents.css (공통)</li>
+                                  <li class="file ext_txt">css.css (html 내 선언)</li>
+                                  <li class="file ext_txt">jquery-confirm.css (jquery-confirm)</li>
+                                  <li class="file ext_txt">jquery.datetimepicker.css (datePicker)</li>
+                                  <li class="file ext_txt">layout.css (페이지스타일)</li>
+                                  <li class="file ext_txt">reset.css (스타일 리셋)</li>
+                                </ul>
+                              </li>
+                              <li class="directory">img (이미지)</li>
+                              <li class="directory">
+                                js
+                                <ul class="jqueryFileTree">
+                                  <li class="file ext_txt">extension.js (interaction script)</li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="directory">
+                            js (플러그인 관련)
+                            <ul class="jqueryFileTree">
+                              <li class="directory">busy-load</li>
+                              <li class="directory">
+                                comm
+                                <ul class="jqueryFileTree">
+                                  <li class="file ext_txt">comutil.js (페이지 제어)</li>
+                                </ul>
+                              </li>
+                              <li class="directory">
+                                jquery
+                                <ul class="jqueryFileTree">
+                                  <li class="file ext_txt">jquery-1.12.4.min.js</li>
+                                </ul>
+                              </li>
+                              <li class="directory">jquery-confirm</li>
+                              <li class="directory">jquery-datetimepicker</li>
+                              <li class="directory">moment</li>
+                              <li class="directory">summernote</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <!--// 디렉토리구조(e) -->
+          </div>
+          <!-- // 주요 페이지 가이드 정의 2(e) -->
+
+          <!-- 모바일 디바이스해상도 2(s) -->
+          <div class="box">
+            <h3>이미지 적용 방법</h3>
+            <div class="box_content type2">모바일 디바이스 해상도는 크게 물리적(Physical) 해상도 와 논리적(Logical) 해상도로 나눌 수 있는데, 모바일 웹 개발/퍼블리싱 시에는 <span class="font_color01">논리적 해상도</span>를 사용하며, 이미지는 <span class="font_color01">픽셀 비율</span>만큼 곱한 사이즈를 사용해야 선명한 이미지가 표출된다.</div>
+
+            <h3>주요 디바이스 해상도</h3>
+            <div class="repscoll">
+              <table class="tbl2">
+                <caption>
+                  주요 디바이스 해상도 항목[Device, 논리적(Logical)해상도(width/height), 물리적(Physical)해상도(width/height), 픽셀비율 pixel ratio, 화소밀도 phys. ppi, 발매일로 구분]
+                </caption>
+                <colgroup>
+                  <col style="width: 20%" />
+                  <col style="width: 17%" />
+                  <col style="width: 17%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 8%" />
+                  <col style="width: 8%" />
+                  <col style="width: 10%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="row" rowspan="2">Device</th>
+                    <th scope="row" colspan="2">논리적(Logical)해상도</th>
+                    <th scope="row" colspan="4">물리적(Physical)해상도</th>
+                    <th scope="row" rowspan="2">출시년도</th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Width</th>
+                    <th scope="row">Height</th>
+                    <th scope="row">Width</th>
+                    <th scope="row">Height</th>
+                    <th scope="row">
+                      픽셀비율<br />
+                      pixel ratio
+                      <a href="javascript:void()" class="btn-qa">
+                        <span>궁금해요</span>
+
+                        <div class="post-it">
+                          <p>
+                            css 픽셀과 물리적 픽셀은 1:1 대응 되는 관계가 아니다. 어떤 기기에서는 물리적 픽셀이 css픽셀보다 4배 작기도 하고, 어떤건 9배 작기도 하다. 이러한 물리적 픽셀과 css 픽셀 사이의 비율이 DPR이고, 1,1.5,2 등등 다양할 수 있다.<br />
+                            DPR = (디바이스 픽셀 / css 픽셀)<br />
+                            높은 해상도의 기기일수록, 높은 DPR을 가지고 있다. 즉, 하나의 CSS 픽셀 안에 많은 물리적 픽셀이 들어가 있는 것. 다시 말해서, 더 깔끔하고 선명한 이미지를 표현할 수 있다.<br />
+                            DPR이 높을 수록 선명한 이미지를 볼 수 있다. 만약에, DPR=2라면, 1개의 CSS 픽셀을 4개의 물리적 픽셀이 표현하는 거니까, 훨씬 선명하게 보이는 것. 1px을 4개의 물리적 픽셀로 표현하니까, 0.5px 선 같은 것도 표현할 수 있는 것이다.
+                          </p>
+                        </div>
+                      </a>
+                    </th>
+                    <th scope="row" class="brd-right">
+                      화소밀도<br />
+                      phys. ppi
+                      <a href="javascript:void()" class="btn-qa">
+                        <span>궁금해요</span>
+                        <div class="post-it">
+                          <p>
+                            PPI는 Pixels Per Inch의 약자로서 해상도의 밀도 단위이다. 픽셀(Pixel)이 단위 길이당 얼마나 조밀하게 표현되는가를 뜻하며, 이것이 낮으면 네모 반듯한 픽셀이 눈에 거슬리고, 높으면 자연스러운 이미지를 보게 된다.<br />
+                            '화소 밀도' 혹은 '화소 집적도' 등의 용어를 사용할 수 있다.
+                          </p>
+                        </div>
+                      </a>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="8"><a href="javascript:void();" class="tb-toogle">iOS</a></td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td>Apple iPhone 14 Pro Max</td>
+                    <td class="bgsec">430</td>
+                    <td class="bgsec">932</td>
+                    <td>1,290</td>
+                    <td>2,796</td>
+                    <td>3</td>
+                    <td>460</td>
+                    <td>2022.09</td>
+                  </tr>
+                  <tr>
+                    <td>Apple iPhone 14 Plus</td>
+                    <td class="bgsec">428</td>
+                    <td class="bgsec">926</td>
+                    <td>1,284</td>
+                    <td>2,778</td>
+                    <td>3</td>
+                    <td>458</td>
+                    <td>2022.09</td>
+                  </tr>
+                  <tr>
+                    <td>Apple iPhone 14 Pro</td>
+                    <td class="bgsec">393</td>
+                    <td class="bgsec">852</td>
+                    <td>1,179</td>
+                    <td>2,556</td>
+                    <td>3</td>
+                    <td>460</td>
+                    <td>2022.09</td>
+                  </tr>
+                  <tr>
+                    <td>Apple iPhone 14</td>
+                    <td class="bgsec">390</td>
+                    <td class="bgsec">844</td>
+                    <td>1,170</td>
+                    <td>2,532</td>
+                    <td>3</td>
+                    <td>460</td>
+                    <td>2022.09</td>
+                  </tr>
+                  <tr>
+                    <td>Apple iPhone 13 Pro Max</td>
+                    <td class="bgsec">428</td>
+                    <td class="bgsec">926</td>
+                    <td>1,284</td>
+                    <td>2,778</td>
+                    <td>3</td>
+                    <td>458</td>
+                    <td>2021.09</td>
+                  </tr>
+                  <tr>
+                    <td>Apple iPhone 13 mini</td>
+                    <td class="bgsec">360</td>
+                    <td class="bgsec">780</td>
+                    <td>1,080</td>
+                    <td>2,340</td>
+                    <td>3</td>
+                    <td>476</td>
+                    <td>2021.09</td>
+                  </tr>
+                  <tr>
+                    <td>Apple iPhone 13/13 Pro</td>
+                    <td class="bgsec">390</td>
+                    <td class="bgsec">844</td>
+                    <td>1,170</td>
+                    <td>2,532</td>
+                    <td>3</td>
+                    <td>460</td>
+                    <td>2021.09</td>
+                  </tr>
+                  <tr>
+                    <td>Apple iPhone 12 Pro Max</td>
+                    <td class="bgsec">428</td>
+                    <td class="bgsec">926</td>
+                    <td>1,284</td>
+                    <td>2,778</td>
+                    <td>3</td>
+                    <td>458</td>
+                    <td>2020.10</td>
+                  </tr>
+                  <tr>
+                    <td>Apple iPhone 12 mini</td>
+                    <td class="bgsec">360</td>
+                    <td class="bgsec">780</td>
+                    <td>1,080</td>
+                    <td>2,340</td>
+                    <td>3</td>
+                    <td>476</td>
+                    <td>2020.10</td>
+                  </tr>
+                  <tr>
+                    <td>Apple iPhone 12/12 Pro</td>
+                    <td class="bgsec">390</td>
+                    <td class="bgsec">844</td>
+                    <td>1,170</td>
+                    <td>2,532</td>
+                    <td>3</td>
+                    <td>460</td>
+                    <td>2020.10</td>
+                  </tr>
+                  <tr>
+                    <td>Apple iPhone SE (2세대)</td>
+                    <td class="bgsec">375</td>
+                    <td class="bgsec">667</td>
+                    <td>750</td>
+                    <td>1,334</td>
+                    <td>2</td>
+                    <td>326</td>
+                    <td>2020.04</td>
+                  </tr>
+                  <tr>
+                    <td>Apple iPhone 11 Pro Max</td>
+                    <td class="bgsec">414</td>
+                    <td class="bgsec">896</td>
+                    <td>1,242</td>
+                    <td>2,688</td>
+                    <td>3</td>
+                    <td>458</td>
+                    <td>2019.09</td>
+                  </tr>
+                  <tr>
+                    <td>Apple iPhone 11 Pro</td>
+                    <td class="bgsec">375</td>
+                    <td class="bgsec">812</td>
+                    <td>1,125</td>
+                    <td>2,436</td>
+                    <td>3</td>
+                    <td>458</td>
+                    <td>2019.09</td>
+                  </tr>
+                  <tr>
+                    <td>Apple iPhone 11</td>
+                    <td class="bgsec">414</td>
+                    <td class="bgsec">896</td>
+                    <td>828</td>
+                    <td>1,792</td>
+                    <td>2</td>
+                    <td>326</td>
+                    <td>2019.09</td>
+                  </tr>
+                  <tr>
+                    <td>Apple iPhone Xs Max</td>
+                    <td class="bgsec">414</td>
+                    <td class="bgsec">896</td>
+                    <td>1,242</td>
+                    <td>2,688</td>
+                    <td>3</td>
+                    <td>458</td>
+                    <td>2018.09</td>
+                  </tr>
+                  <tr>
+                    <td>Apple iPhone Xr</td>
+                    <td class="bgsec">414</td>
+                    <td class="bgsec">896</td>
+                    <td>828</td>
+                    <td>1,792</td>
+                    <td>2</td>
+                    <td>326</td>
+                    <td>2018.09</td>
+                  </tr>
+                  <tr>
+                    <td>Apple iPhone X/Xs</td>
+                    <td class="bgsec">375</td>
+                    <td class="bgsec">812</td>
+                    <td>1,125</td>
+                    <td>2,436</td>
+                    <td>3</td>
+                    <td>458</td>
+                    <td>X : 2017.09 / Xs : 2018.09</td>
+                  </tr>
+                  <tr>
+                    <td>Apple iPhone 6+/6s+/7+/8+</td>
+                    <td class="bgsec">414</td>
+                    <td class="bgsec">736</td>
+                    <td>1,080</td>
+                    <td>1,920</td>
+                    <td>3</td>
+                    <td>401</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Apple iPhone 7 / iPhone 8</td>
+                    <td class="bgsec">375</td>
+                    <td class="bgsec">667</td>
+                    <td>750</td>
+                    <td>1,334</td>
+                    <td>2</td>
+                    <td>326</td>
+                    <td>7 : 2016.09 / 8 : 2017.09</td>
+                  </tr>
+                  <tr>
+                    <td>Apple iPhone SE</td>
+                    <td class="bgsec">320</td>
+                    <td class="bgsec">568</td>
+                    <td>640</td>
+                    <td>1,336</td>
+                    <td>2</td>
+                    <td>326</td>
+                    <td>2016.03</td>
+                  </tr>
+                  <tr>
+                    <td>Apple iPhone 6/6s</td>
+                    <td class="bgsec">375</td>
+                    <td class="bgsec">667</td>
+                    <td>750</td>
+                    <td>1,334</td>
+                    <td>2</td>
+                    <td>326</td>
+                    <td>6 : 2014.09 / 6s : 2015.09</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td colspan="8"><a href="javascript:void();" class="tb-toogle">AOS</a></td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td>Samsung Galaxy Z Fold4</td>
+                    <td class="bgsec">690</td>
+                    <td class="bgsec">828</td>
+                    <td>1,812</td>
+                    <td>2,176</td>
+                    <td>2.625</td>
+                    <td>374</td>
+                    <td>2022.08</td>
+                  </tr>
+                  <tr>
+                    <td>Samsung Galaxy Z Fold3</td>
+                    <td class="bgsec">674</td>
+                    <td class="bgsec">842</td>
+                    <td>1,768</td>
+                    <td>2,208</td>
+                    <td>2.625</td>
+                    <td>374</td>
+                    <td>2021.08</td>
+                  </tr>
+                  <tr>
+                    <td>Samsung Galaxy Z Fold2</td>
+                    <td class="bgsec">884</td>
+                    <td class="bgsec">1,104</td>
+                    <td>1,768</td>
+                    <td>2,208</td>
+                    <td>2</td>
+                    <td>372</td>
+                    <td>2020.09</td>
+                  </tr>
+                  <tr>
+                    <td>Samsung Galaxy Z Fold</td>
+                    <td class="bgsec">768</td>
+                    <td class="bgsec">1,076</td>
+                    <td>1,536</td>
+                    <td>2,152</td>
+                    <td>2</td>
+                    <td>362</td>
+                    <td>2019.09</td>
+                  </tr>
+                  <tr>
+                    <td>Samsung Galaxy Z Flip4</td>
+                    <td class="bgsec">360</td>
+                    <td class="bgsec">880</td>
+                    <td>1080</td>
+                    <td>2640</td>
+                    <td>3</td>
+                    <td>425</td>
+                    <td>2022.08</td>
+                  </tr>
+                  <tr>
+                    <td>Samsung Galaxy Z Flip3</td>
+                    <td class="bgsec">360</td>
+                    <td class="bgsec">880</td>
+                    <td>1080</td>
+                    <td>2640</td>
+                    <td>3</td>
+                    <td>425</td>
+                    <td>2021.08</td>
+                  </tr>
+                  <tr>
+                    <td>Samsung Galaxy Z Flip</td>
+                    <td class="bgsec">412</td>
+                    <td class="bgsec">1,005</td>
+                    <td>1,080</td>
+                    <td>2,640</td>
+                    <td>2.625</td>
+                    <td>425</td>
+                    <td>2020.07</td>
+                  </tr>
+                  <tr>
+                    <td>Samsung Galaxy S23 Ultra</td>
+                    <td class="bgsec">360</td>
+                    <td class="bgsec">772</td>
+                    <td>1440</td>
+                    <td>3088</td>
+                    <td>4</td>
+                    <td>500</td>
+                    <td>2023.02</td>
+                  </tr>
+                  <tr>
+                    <td>Samsung Galaxy S23/S23+</td>
+                    <td class="bgsec">360</td>
+                    <td class="bgsec">780</td>
+                    <td>1080</td>
+                    <td>2340</td>
+                    <td>3</td>
+                    <td>S23 : 425 / S23+ : 393</td>
+                    <td>2023.02</td>
+                  </tr>
+                  <tr>
+                    <td>Samsung Galaxy S22 Ultra</td>
+                    <td class="bgsec">360</td>
+                    <td class="bgsec">772</td>
+                    <td>1440</td>
+                    <td>3088</td>
+                    <td>4</td>
+                    <td>500</td>
+                    <td>2022.02</td>
+                  </tr>
+                  <tr>
+                    <td>Samsung Galaxy S22/S22+</td>
+                    <td class="bgsec">360</td>
+                    <td class="bgsec">780</td>
+                    <td>1080</td>
+                    <td>2340</td>
+                    <td>3</td>
+                    <td>S22 : 425 / S22+ : 393</td>
+                    <td>2022.02</td>
+                  </tr>
+                  <tr>
+                    <td>Samsung Galaxy S21 Ultra</td>
+                    <td class="bgsec">384</td>
+                    <td class="bgsec">854</td>
+                    <td>1,440</td>
+                    <td>3,200</td>
+                    <td>3.75</td>
+                    <td>515</td>
+                    <td>2021.01</td>
+                  </tr>
+                  <tr>
+                    <td>Samsung Galaxy S21/S21+</td>
+                    <td class="bgsec">360</td>
+                    <td class="bgsec">800</td>
+                    <td>1,080</td>
+                    <td>2,400</td>
+                    <td>3</td>
+                    <td>S21 : 421 / S21+ : 394</td>
+                    <td>2021.01</td>
+                  </tr>
+                  <tr>
+                    <td>Samsung Galaxy S20 Ultra</td>
+                    <td class="bgsec">412</td>
+                    <td class="bgsec">915</td>
+                    <td>1,440</td>
+                    <td>3,200</td>
+                    <td>3.5</td>
+                    <td>511</td>
+                    <td>2020.02</td>
+                  </tr>
+                  <tr>
+                    <td>Samsung Galaxy S20/S20+</td>
+                    <td class="bgsec">360</td>
+                    <td class="bgsec">800</td>
+                    <td>1,440</td>
+                    <td>3,200</td>
+                    <td>4</td>
+                    <td>S21 : 566 / S21+ : 525</td>
+                    <td>2020.02</td>
+                  </tr>
+                  <tr>
+                    <td>Samsung Galaxy S10+</td>
+                    <td class="bgsec">412</td>
+                    <td class="bgsec">914</td>
+                    <td>1,440</td>
+                    <td>3,200</td>
+                    <td>3.5</td>
+                    <td>522</td>
+                    <td>2019.03</td>
+                  </tr>
+                  <tr>
+                    <td>Samsung Galaxy S10 5G</td>
+                    <td class="bgsec">412</td>
+                    <td class="bgsec">869</td>
+                    <td>1,440</td>
+                    <td>3,040</td>
+                    <td>3.5</td>
+                    <td>505</td>
+                    <td>2019.03</td>
+                  </tr>
+                  <tr>
+                    <td>Samsung Galaxy S10e</td>
+                    <td class="bgsec">360</td>
+                    <td class="bgsec">760</td>
+                    <td>1,080</td>
+                    <td>2,280</td>
+                    <td>3</td>
+                    <td>438</td>
+                    <td>2019.03</td>
+                  </tr>
+                  <tr>
+                    <td>Samsung Galaxy S9/S9+</td>
+                    <td class="bgsec">360</td>
+                    <td class="bgsec">740</td>
+                    <td>1,440</td>
+                    <td>2,960</td>
+                    <td>4</td>
+                    <td>S9 : 570 / S9+ : 529</td>
+                    <td>2018.03</td>
+                  </tr>
+                  <tr>
+                    <td>Samsung Galaxy S8/S8+</td>
+                    <td class="bgsec">360</td>
+                    <td class="bgsec">740</td>
+                    <td>1,440</td>
+                    <td>2,960</td>
+                    <td>4</td>
+                    <td>S8 : 568 / S8+ : 529</td>
+                    <td>2017.04</td>
+                  </tr>
+                  <!-- <tr>
+                    <td>Samsung Galaxy S7/S7 edge</td>
+                    <td class="bgsec">360</td>
+                    <td class="bgsec">640</td>
+                    <td>1,440</td>
+                    <td>2,560</td>
+                    <td>4</td>
+                    <td>S7 : 577.4 / S7 edge : 534</td>
+                    <td>2016.02</td>
+                  </tr> -->
+                </tbody>
+              </table>
+
+              <script>
+                $('.tb-toogle').bind('click', function (e) {
+                  e.preventDefault();
+                  let $st = $(this).closest('tbody').next('tbody');
+
+                  if (!$st.hasClass('dis-none')) {
+                    $(this).addClass('up');
+                    $st.addClass('dis-none');
+                  } else {
+                    $(this).removeClass('up');
+                    $st.removeClass('dis-none');
+                  }
+                });
+
+                $('.btn-qa, .post-it').bind('click', function (e) {
+                  e.preventDefault();
+                  let $post = $(this).children('.post-it');
+
+                  if (!$post.hasClass('opened')) {
+                    $post.addClass('opened');
+                  } else {
+                    $post.removeClass('opened');
+                  }
+                });
+              </script>
+            </div>
+
+            <div class="hint">
+              <h4>디바이스별 화면크기 대응방법 참고 사이트</h4>
+              <p><a href="https://gs.statcounter.com/vendor-market-share/mobile/south-korea" target="_blank" title="새창열림">https://gs.statcounter.com/vendor-market-share/mobile/south-korea</a></p>
+              <p><a href="https://ui.toast.com/weekly-pick/ko_20200728" target="_blank" title="새창열림">https://ui.toast.com/weekly-pick/ko_20200728</a></p>
+              <p><a href="https://news.samsungdisplay.com/17727/" target="_blank" title="새창열림">https://news.samsungdisplay.com/17727/</a></p>
+            </div>
+          </div>
+          <!-- // 모바일 디바이스해상도 2(e) -->
+
+          <!-- SEO 3 -->
+          <div class="box">
+            <h3>SEO 가이드 항목</h3>
+            <div class="repscoll">
+              <table class="tbl2">
+                <caption>
+                  SEO 가이드 항목(구분, 업무, 세부지침, 세부내용, 비고, 직무구분으로 구분)
+                </caption>
+                <colgroup>
+                  <col style="width: 6%" />
+                  <col style="width: 8%" />
+                  <col style="width: 15%" />
+                  <col style="width: 35%" />
+                  <col style="width: 20%" />
+                  <col style="width: 4%" />
+                  <col style="width: 4%" />
+                  <col style="width: 4%" />
+                  <col style="width: 4%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="row" rowspan="2">구분</th>
+                    <th scope="row" rowspan="2">업무</th>
+                    <th scope="row" rowspan="2">세부지침</th>
+                    <th scope="row" rowspan="2">세부내용</th>
+                    <th scope="row" rowspan="2">비고</th>
+                    <th scope="rowgroup" colspan="4">직무구분</th>
+                  </tr>
+                  <tr>
+                    <th scope="row">UX기획</th>
+                    <th scope="row">UI디자인</th>
+                    <th scope="row">퍼블리셔</th>
+                    <th scope="row">개발</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>테크니컬 SEO</td>
+                    <td>웹 URL</td>
+                    <td class="txl">검색 친화적 URL 사용하기</td>
+                    <td class="txl">잘 정리된 URL은 검색엔진에게 웹 문서를 크롤링 하기에 좋은 환경을 제공합니다.</td>
+                    <td class="txl"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>○</td>
+                  </tr>
+                  <tr>
+                    <td>테크니컬 SEO</td>
+                    <td>웹 URL</td>
+                    <td class="txl">서브 도메인 대신 서브 폴더 활용하기</td>
+                    <td class="txl">도메인 주소(서브 도메인 포함)가 다르면 다른 웹사이트로 간주하므로 SEO에 좀 더 유리한 방식인 서브 폴더 방식을 사용하는 것이 권고됩니다.</td>
+                    <td class="txl"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>○</td>
+                  </tr>
+                  <tr>
+                    <td>테크니컬 SEO</td>
+                    <td>웹사이트 속도</td>
+                    <td class="txl">평균 3초미만 로딩 속도 준수하기</td>
+                    <td class="txl">이미지 압축, 코드정리 및 압축, 속도 개선 테스트 체크합니다.</td>
+                    <td class="txl">한국 컴퓨웨어에 따르면, 사용자의 40%가 3초 동안 기다리게 되면 사이트를 이탈</td>
+                    <td></td>
+                    <td>○</td>
+                    <td>○</td>
+                    <td>○</td>
+                  </tr>
+                  <tr>
+                    <td>테크니컬 SEO</td>
+                    <td>웹사이트 속도</td>
+                    <td class="txl">서버 속도</td>
+                    <td class="txl">서버 속도는 웹 호스트의 성능과 위치로 결정됩니다. 호스팅 서버의 자원이 충분한지 모니터링하고 많은 방문자로 인해 속도가 저하된다면 추가 조치가 필요합니다.</td>
+                    <td class="txl"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>○</td>
+                  </tr>
+                  <tr>
+                    <td>테크니컬 SEO</td>
+                    <td>웹사이트 속도</td>
+                    <td class="txl">로딩 속도</td>
+                    <td class="txl">웹페이지 랜더링 시 이미지를 비롯한 구성 요소의 데이터가 불필요하게 비대하다면 압축, 정리하여 속도를 개선해야 합니다.</td>
+                    <td class="txl"></td>
+                    <td></td>
+                    <td>○</td>
+                    <td>○</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>테크니컬 SEO</td>
+                    <td>보안 프로토콜</td>
+                    <td class="txl">SSL 인증서 구입</td>
+                    <td class="txl">인증 기관에서 발급하는 SSL 인증서를 구입하여 웹 서버에 SSL 인증서를 설치한 뒤 웹 페이지에서 모든 리소스를 HTTPS로 변경합니다.</td>
+                    <td class="txl"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>○</td>
+                  </tr>
+                  <tr>
+                    <td>테크니컬 SEO</td>
+                    <td>로봇 파일 설정</td>
+                    <td class="txl">루트 디렉토리에 위치시키기</td>
+                    <td class="txl">robots.txt는 html이 아닌 일반 텍스트 파일로 작성하여 사이트의 루트 디렉토리에 위치해야 합니다. 다른 곳에 robots.txt 파일을 올리면 검색 로봇이 찾을 수 없습니다.</td>
+                    <td class="txl"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>○</td>
+                  </tr>
+                  <tr>
+                    <td>테크니컬 SEO</td>
+                    <td>로봇 파일 설정</td>
+                    <td class="txl">접근을 허용할 웹 크롤러 및 색인을 허용할 콘텐츠 명시하기</td>
+                    <td class="txl">웹 사이트의 모든 콘텐츠를 차단시키면 SEO에 매우 안 좋은 영향을 끼치기 때문에 가능한 모든 콘텐츠를 색인 허용하되, 보안상 공개할 수 없는 페이지만 수집을 차단합니다.</td>
+                    <td class="txl"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>○</td>
+                  </tr>
+                  <tr>
+                    <td>테크니컬 SEO</td>
+                    <td>사이트맵</td>
+                    <td class="txl">사이트맵 파일의 위치를 robots.txt에 지정하기</td>
+                    <td class="txl">robots.txt 파일과는 달리 사이트맵 파일은 꼭 루트 디렉토리에 위치하지 않아도 되며, 사이트맵 파일의 위치를 robots.txt에 지정하면 됩니다.</td>
+                    <td class="txl"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>○</td>
+                  </tr>
+                  <tr>
+                    <td>테크니컬 SEO</td>
+                    <td>사이트맵</td>
+                    <td class="txl">정해진 사이트맵 양식으로 제작하기</td>
+                    <td class="txl">사이트맵은 정해진 양식으로 제작되어야 합니다.</td>
+                    <td class="txl"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>○</td>
+                  </tr>
+                  <tr>
+                    <td>테크니컬 SEO</td>
+                    <td>타이틀 태그</td>
+                    <td class="txl">길이 최적화하기</td>
+                    <td class="txl">타이틀은 공백을 포함해 한글 기준 32자, 영어 기준 65자를 넘지 않는 것을 권장합니다.</td>
+                    <td class="txl"><a href="#seo-A1" class="undlink anchor">아래 타이틀 태그 안내 참조</a></td>
+                    <td>○</td>
+                    <td></td>
+                    <td>○</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>테크니컬 SEO</td>
+                    <td>타이틀 태그</td>
+                    <td class="txl">타깃 키워드 포함하기</td>
+                    <td class="txl">검색어를 토대로 검색 결과가 나타나므로 타이틀이 핵심 키워드를 포함하고 있는 것이 좋습니다.</td>
+                    <td class="txl"><a href="#seo-A2" class="undlink anchor">아래 타이틀 태그 안내 참조</a></td>
+                    <td>○</td>
+                    <td></td>
+                    <td>○</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>테크니컬 SEO</td>
+                    <td>타이틀 태그</td>
+                    <td class="txl">각 페이지 별 고유의 제목 적용하기</td>
+                    <td class="txl">중복된 타이틀을 모든 페이지에 적용하는 것이 아니라, 페이지마다 페이지에 알맞은 고유의 제목이 있어야 합니다.</td>
+                    <td class="txl"><a href="#seo-A3" class="undlink anchor">아래 타이틀 태그 안내 참조</a></td>
+                    <td>○</td>
+                    <td></td>
+                    <td>○</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>테크니컬 SEO</td>
+                    <td>메타 키워드</td>
+                    <td class="txl">메타 키워드 최적화</td>
+                    <td class="txl">
+                      1. 메타 키워드는 사용자가 검색엔진에서 키워드 검색시 메타키워드와 매칭이 되는 것이 있으면 검색결과에 노출을 해달라는 것입니다.<br />
+                      2. 너무 많은 키워드를 등록할 경우 검색 로봇이 뒷 부분의 키워드들을 무시할 경우가 있으므로 핵심 키워드 3~4개로 설정하는 것이 좋습니다.
+                    </td>
+                    <td class="txl"><a href="#seo-B1" class="undlink anchor">아래 메타 키워드 참조</a></td>
+                    <td>○</td>
+                    <td></td>
+                    <td>○</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>테크니컬 SEO</td>
+                    <td>메타 디스크립션 태그</td>
+                    <td class="txl">길이 최적화하기</td>
+                    <td class="txl">메타 디스크립션은 공백을 포함해 한글 기준 77자, 영어 기준 160자를 넘지 않는 것을 권장합니다.</td>
+                    <td class="txl"><a href="#seo-B2" class="undlink anchor">아래 메타 디스크립션 태그 참조</a></td>
+                    <td>○</td>
+                    <td></td>
+                    <td>○</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>테크니컬 SEO</td>
+                    <td>메타 디스크립션 태그</td>
+                    <td class="txl">타깃 키워드 포함하기</td>
+                    <td class="txl">주요 키워드를 포함하여 검색 사용자의 클릭을 자연스럽게 유도하는 문장으로 디스크립션을 작성해야 합니다.</td>
+                    <td class="txl"><a href="#seo-B3" class="undlink anchor">아래 메타 디스크립션 태그 참조</a></td>
+                    <td>○</td>
+                    <td></td>
+                    <td>○</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>테크니컬 SEO</td>
+                    <td>메타 디스크립션 태그</td>
+                    <td class="txl">각 페이지 별 고유의 디스키릅션 적용하기</td>
+                    <td class="txl">사용자는 메타 디스크립션으로 콘텐츠 내용을 미리 확인하고 웹 사이트 방문을 결정하기 때문에 최대한 서술적으로 각 페이지마다 고유한 메타 디스크립션을 적용해야 합니다.</td>
+                    <td class="txl"><a href="#seo-B4" class="undlink anchor">아래 메타 디스크립션 태그 참조</a></td>
+                    <td>○</td>
+                    <td></td>
+                    <td>○</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>테크니컬 SEO</td>
+                    <td>이미지</td>
+                    <td class="txl">이미지 파일명 최적화하기</td>
+                    <td class="txl">타깃 키워드를 활용하여 이미지 파일명을 최적화하는 것이 권고됩니다.</td>
+                    <td class="txl"></td>
+                    <td>○</td>
+                    <td></td>
+                    <td>○</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>테크니컬 SEO</td>
+                    <td>이미지</td>
+                    <td class="txl">이미지 대체 텍스트를 최대한 구체적으로 작성하기</td>
+                    <td class="txl">이미지 대체 텍스트 또한 타깃 키워드를 활용하여 이미지를 최대한 구체적으로 설명하는 문구로 작성합니다.</td>
+                    <td class="txl"></td>
+                    <td>○</td>
+                    <td></td>
+                    <td>○</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>테크니컬 SEO</td>
+                    <td>오픈 그래프</td>
+                    <td class="txl">오픈 그래프 최적화</td>
+                    <td class="txl">오픈 그래프 태그는 페이지 링크가 공유될 때 미리 보기에 나오는 페이지의 제목, 설명글, 이미지 등을 설정하는 역할을 합니다.</td>
+                    <td class="txl"><a href="#seo-C1" class="undlink anchor">아래 오픈 그래프 참조</a></td>
+                    <td>○</td>
+                    <td></td>
+                    <td>○</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>테크니컬 SEO</td>
+                    <td>캐노니컬 태그</td>
+                    <td class="txl">최적화</td>
+                    <td class="txl">중복되는 여러 페이지를 세세히 구분하지 못하는 검색엔진 크롤러에게 검색되길 원하는 하나의 대표적인 URL 주소를 알려주는 역할을 합니다.</td>
+                    <td class="txl"></td>
+                    <td></td>
+                    <td></td>
+                    <td>○</td>
+                    <td>○</td>
+                  </tr>
+                  <tr>
+                    <td>테크니컬 SEO</td>
+                    <td>파비콘</td>
+                    <td class="txl">파비콘 가이드 준수</td>
+                    <td class="txl">
+                      1. 파비콘 사이즈, 파일 포맷 및 기본 수칙 확인<br />
+                      2. 파비콘 마크업
+                    </td>
+                    <td class="txl"></td>
+                    <td></td>
+                    <td>○</td>
+                    <td>○</td>
+                    <td></td>
+                  </tr>
+                  <tr class="bgsec">
+                    <td>콘텐츠 SEO</td>
+                    <td>키워드</td>
+                    <td class="txl">키워드 리서치</td>
+                    <td class="txl">브랜드, 제품 및 서비스를 잘 표현해 주는 키워드 중 잠재/타깃 고객이 주로 사용하고, 검색엔진에서 쉽게 상위 노출을 노릴 수 있는 단어나 문구를 찾습니다.</td>
+                    <td class="txl"></td>
+                    <td>○</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr class="bgsec">
+                    <td>콘텐츠 SEO</td>
+                    <td>키워드</td>
+                    <td class="txl">타깃 키워드 활용</td>
+                    <td class="txl">키워드 리서치를 통해 타깃 키워드를 선별하고 타이틀, 메타 디스크립션, 헤딩태그, 본문, 이미지 대체 텍스트등에 타깃 키워드를 활용합니다.</td>
+                    <td class="txl"></td>
+                    <td>○</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>온서프 SEO</td>
+                    <td>
+                      스키마 마크업<br />
+                      (구조화된 데이터)
+                    </td>
+                    <td class="txl">JSON-LD 형식 사용하기</td>
+                    <td class="txl">JSON 형식을 사용하여 스키마 마크업 코드를 작성하고, 페이지의 &lt;head&gt; 혹은 본문의 &lt;script&gt; 태그 내에 삽입합니다.</td>
+                    <td class="txl"></td>
+                    <td></td>
+                    <td></td>
+                    <td>○</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>온서프 SEO</td>
+                    <td>
+                      스키마 마크업<br />
+                      (구조화된 데이터)
+                    </td>
+                    <td class="txl">페이지별 알맞는 스키마 마크업 유형 선별하기</td>
+                    <td class="txl">검색 시 보다 상세한 결과값을 노출하기 위하여 페이지 유형별 입력 데이터를 차등하게 입력합니다.</td>
+                    <td class="txl"></td>
+                    <td></td>
+                    <td></td>
+                    <td>○</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>테크니컬 SEO - 타이틀 태그 최적화</h3>
+            <div class="box_content type2">Title 태그는 페이지 레벨에 해당하는 테크니컬 SEO 항목이며, <span class="font_color01">페이지 제목을 나타내는 HTML의 &lt;head&gt;와 &lt;/head&gt; 사이에 위치한 &lt;title&gt; &lt;/title&gt;태그</span>입니다. 검색엔진은 <span class="font_color01">&lt;title&gt;과 &lt;/title&gt; 상의 내용을 수집해서 검색 결과 페이지에 표시</span>합니다.</div>
+
+            <figure class="figarea">
+              <figcaption>[HTML head 섹션에 위치한 타이틀 태그 예시]</figcaption>
+              <img src="./assets/images/img_seo1.png" alt="" />
+            </figure>
+
+            <section class="sect" data-sid="ui-layerpop">
+              <div class="codeBox">
+                <div class="code">
+                  <pre class="brush: html">
+								&lt;head&gt;
+									&lt;title&gt;카카오뱅크 개인사업자 신용대출 | 카카오뱅크&lt;/title&gt; 
+								&lt;/head&gt;</pre
+                  >
+                </div>
+              </div>
+            </section>
+
+            <ol class="numlist">
+              <li id="seo-A1">
+                <h5>1. 길이 최적화하기</h5>
+                <p>타이틀은 공백을 포함해 한글 기준 32자, 영어 기준 65자를 넘지 않는 것을 권장합니다. (길이 제한을 넘을 경우 타이틀이 잘려 일부만 검색 결과에 노출됩니다.)</p>
+              </li>
+              <li>
+                <h5 id="seo-A2">2. 타깃 키워드 포함하기</h5>
+                <p>
+                  검색어를 토대로 검색 결과가 나타나므로 타이틀이 핵심 키워드를 포함하고 있는 것이 좋습니다.<br />
+                  단, 페이지 내용과 무관한 키워드를 많이 넣으면, 구글로부터 페널티를 받을 수 있습니다.
+                </p>
+              </li>
+              <li id="seo-A3">
+                <h5>3. 각 페이지 별 고유의 제목 적용하기</h5>
+                <p>중복된 타이틀을 모든 페이지에 적용하는 것이 아니라, 페이지마다 페이지에 알맞은 고유의 제목이 있어야 합니다.</p>
+              </li>
+            </ol>
+
+            <h3>테크니컬 SEO - 메타 키워드 최적화</h3>
+            <div class="box_content type2">메타 키워드는 주어진 웹 페이지의 내용에 대한 추가 정보를 제공하는 데 사용되는 메타 태그 유형입니다. 메타 키워드의 내용은 페이지 소스 코드에서 봇 크롤러에게만 표시됩니다. 사용자에게 표시되지 않습니다.</div>
+
+            <section class="sect" data-sid="ui-layerpop">
+              <div class="codeBox">
+                <div class="code">
+                  <pre class="brush: html">
+								&lt;head&gt;
+									&lt;name name="keyword" content="우양재단,우양,푸드스마일즈우양,푸드스마일즈,좋은먹거리,먹거리,NGO,NGO단체,비영리단체,독거노인,한부모가정,모자가정,해외아동,탈북민,장학생" /&gt; 
+								&lt;/head&gt;</pre
+                  >
+                </div>
+              </div>
+            </section>
+
+            <figure class="figarea">
+              <img src="./assets/images/img_seo2.png" alt="" />
+              <figcaption class="space1">
+                주의. 최근 과도한 키워드 스터핑으로 인해 검색엔진들에서 무시하는 경향이 점차 확산되고 있습니다.<br />
+                실제 많은 사이트에서 메타키워드를 생략하는 추세이기도 합니다.(코딩에서 한줄이라도 줄이자는 취지)
+              </figcaption>
+            </figure>
+
+            <h3>테크니컬 SEO - 메타 디스크립션 태그 최적화</h3>
+            <div class="box_content type2">메타 디스크립션 태그는 웹 페이지를 요약한 설명글입니다. 타이틀 태그처럼 HTML의 <head></head> 사이에 위치한 태그입니다. 검색 결과 페이지에서 페이지 URL과 타이틀 아래에 표시됩니다.</div>
+
+            <section class="sect" data-sid="ui-layerpop">
+              <div class="codeBox">
+                <div class="code">
+                  <pre class="brush: html">
+								&lt;head&gt;
+									&lt;name name="description" content="바쁜 사장님을 위한 간편한 신용대출" /&gt; 
+								&lt;/head&gt;</pre
+                  >
+                </div>
+              </div>
+            </section>
+
+            <ol class="numlist">
+              <li id="seo-B1">
+                <h5>1. 길이 최적화하기</h5>
+                <p>메타 디스크립션은 공백을 포함해 한글 기준 77자, 영어 기준 160자를 넘지 않는 것을 권장합니다. (길이 제한을 넘을 경우 메타 디스크립션이 잘려 일부만 검색결과에 노출됩니다.)</p>
+              </li>
+              <li>
+                <h5 id="seo-B2">2. 타깃 키워드 포함하기</h5>
+                <p>주요 키워드를 포함하여 검색 사용자의 클릭을 자연스럽게 유도하는 문장으로 디스크립션을 작성해야 합니다.</p>
+              </li>
+              <li id="seo-B3">
+                <h5>3. 각 페이지 별 고유의 제목 적용하기</h5>
+                <p>사용자는 메타 디스크립션으로 콘텐츠 내용을 미리 확인하고 웹 사이트 방문을 결정하기 때문에 최대한 서술적으로 각 페이지마다 고유한 메타 디스크립션을 적용해야 합니다.</p>
+              </li>
+              <li id="seo-B4">
+                <h5>4. CTA(콜투액션)으로 메타디스크립션을 마무리하자!</h5>
+                <p>콜투액션 문구를 포함시켜서 검색 사용자들의 관심과 클릭을 유도합니다.</p>
+              </li>
+            </ol>
+
+            <h3 id="seo-C1">테크니컬 SEO - 오픈 그래프 최적화</h3>
+            <div class="box_content type2">Open gragh 태그는 페이지 링크가 공유될 때 미리 보기에 나오는 페이지의 제목, 설명글, 이미지 등을 설정하는 역할을 합니다. 설정하지 않으면, 크롤러는 자동으로 웹 사이트의 제목, 설명, 이미지를 설정하기 때문에 콘텐츠와 맞지 않은 제목이나 이미지가 설정되어 공유될 수 있습니다.</div>
+
+            <figure class="figarea">
+              <figcaption>[HTML head 섹션에 위치한 메타 디스크립션 예시]</figcaption>
+              <img src="./assets/images/img_seo3.png" alt="" />
+            </figure>
+
+            <section class="sect" data-sid="ui-layerpop">
+              <div class="codeBox">
+                <div class="code">
+                  <pre class="brush: html">
+								&lt;head&gt;
+									&lt;!-- 페이지 Location으로 미국식 표기 : 현재 페이지 &gt; 2Depth 타이틀 &gt; 1Depth 타이틀 | whispers shop --&gt;
+									&lt;title&gt;현재 페이지 &gt; 2Depth 타이틀 &gt; 1Depth 타이틀 | 카카오뱅크&lt;/title&gt;
+									&lt;!-- 오픈 그래프 프로토콜 --&gt;
+									&lt;meta property="og:description" content="바쁜 사장님을 위한 간편한 신용대출" /&gt;
+									&lt;meta property="og:type" content="website" /&gt;
+									&lt;meta property="og:title" content="카카오뱅크 개인사업자 신용대출" /&gt;
+									&lt;meta property="og:url" content="https://www.kakaobank.com/products/sohoLoans" /&gt;
+									&lt;meta property="og:image" content="https://og.kakaobank.io/view/79b2d90d-a5f2-451a-88c1-358f38090311" /&gt;
+									&lt;meta property="og:site_name" content="kakaobank.com" /&gt;
+								&lt;/head&gt;</pre
+                  >
+                </div>
+              </div>
+            </section>
+
+            <h3>웹상에 올라오는 모든 개별 콘텐츠는 Heading tag로 구분해 줘야 검색엔진이 페이지를 이해하고 인덱싱 가능</h3>
+            <div class="gtxt-box">
+              <p>H1 태그 : <span class="font_color01"> 제목인 H1태그는 한 페이지에 단 한 번만 사용하는 것이 필수입니다. 더 쓰면 검색로봇이 어뷰징으로 판단해 검색에서 제외해 버립니다.</span> H2부터는 다중사용 가능</p>
+            </div>
+            <section class="sect" data-sid="ui-layerpop">
+              <div class="codeBox">
+                <div class="code">
+                  <pre class="brush: html">								&lt;h1&gt;whispers shop&lt;/h1&gt;</pre>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- // SEO 3 -->
+        </div>
+      </div>
+    </div>
+    <!-- // 본문 내용 -->
+    <!-- Footer -->
+    <footer>
+      <!-- 하단 정보 -->
+    </footer>
+    <!-- //Footer -->
+  </body>
+</html>
