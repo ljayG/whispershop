@@ -34,52 +34,15 @@
       <div class="container">
         <h1>소수자를 위한 쇼핑몰 | whispers shop</h1>
         <header id="header">
-          <button type="button" class="menu-btn" aria-expanded="false" aria-label="전체메뉴">
+          <button type="button" class="menu-btn" aria-expanded="false">
             <span>전체메뉴</span>
           </button>
         </header>
         <main id="contents">
-          <!-- <section>
-            <h2 class="blind">화면스타일 선택</h2>
-            <div class="screen-mode">
-              <div class="scr-select">
-                <div>배경<span class="blind">선택</span></div>
-              </div>
-              <div class="screen-lst light-mode">
-                <button type="button" id="btnLight" onclick="location.href='../products/list_living.html';">
-                  <div class="screen-inner">
-                    <div class="product">
-                      <h3 class="tit">
-                        <div class="short-tit">동구밭 지구살림</div>
-                        클래식 우유식빵
-                      </h3>
-                      <div class="price" aria-label="구매가격">13,000 <span class="blind">원</span></div>
-                    </div>
-                    <div class="img"></div>
-                  </div>
-                </button>
-              </div>
-              <div class="screen-lst dark-mode">
-                <button type="button" id="btnDark">
-                  <div class="screen-inner">
-                    <div class="product">
-                      <h3 class="tit">
-                        <div class="short-tit">동구밭 지구살림</div>
-                        클래식 우유식빵
-                      </h3>
-                      <div class="price" aria-label="구매가격">13,000 <span class="blind">원</span></div>
-                    </div>
-                    <div class="img"></div>
-                  </div>
-                </button>
-              </div>
-            </div>
-          </section> -->
-
           <section>
             <h2 class="blind">화면스타일 선택</h2>
             <div class="screen-mode">
-              <input type="checkbox" class="src-input" id="screenSelect" />
+              <input type="checkbox" class="src-input" id="screenSelect" title="다크모드 활성화" />
               <label class="scr-label" for="screenSelect">
                 <div class="screen-inner">
                   <div class="blind">클릭시 화면반전모드 선택</div>
@@ -89,7 +52,10 @@
                       <div class="short-tit">동구밭 지구살림</div>
                       클래식 우유식빵
                     </h4>
-                    <div class="price" aria-label="구매가격">13,000 <span class="blind">원</span></div>
+                    <div class="price">
+                      <span class="blind">구매가격</span>
+                      13,000 <span class="blind">원</span>
+                    </div>
                   </div>
                   <div class="img"></div>
                 </div>
