@@ -45,7 +45,7 @@
         <div class="menu_area">
           <ul class="tab_menu">
             <li class="active"><a href="javascript:void(0)">웹접근성</a></li>
-            <li><a href="javascript:void(0)">주요 페이지 가이드</a></li>
+            <li><a href="javascript:void(0)">마크업 가이드</a></li>
             <li><a href="javascript:void(0)">모바일 해상도</a></li>
             <li><a href="javascript:void(0)">SEO</a></li>
           </ul>
@@ -1140,11 +1140,11 @@
           </div>
           <!-- // WAI-ARIA 1 -->
 
-          <!-- 주요 페이지 가이드 정의 2(s) -->
+          <!-- 마크업 가이드 정의 2(s) -->
           <div class="box">
             <ul class="tabmenu" role="tablist">
               <li><a href="#" role="tab" aria-selected="true" aria-controls="basicInfo">기본 정의</a></li>
-              <li><a href="#" role="tab" aria-selected="false" aria-controls="directoryInfo">디렉토리구조</a></li>
+              <li><a href="#" role="tab" aria-selected="false" aria-controls="directoryInfo">페이지 가이드</a></li>
             </ul>
             <!-- 기본 정의(s) -->
             <section id="basicInfo" role="tabpanel" aria-labelledby="기본 정의" tabindex="0">
@@ -1160,79 +1160,57 @@
                 <div class="codeBox">
                   <div class="code">
                     <pre class="brush: html">
-								&lt;!doctype html&gt;
-								&lt;html lang="ko"&gt;
-									&lt;head&gt;
-										&lt;meta charset="UTF-8" /&gt;
-										&lt;meta http-equiv="X-UA-Compatible" content="ie=edge" /&gt;
-										&lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" /&gt;
-										&lt;title&gt;UI&lt;/title /&gt;
-										&lt;meta name="format-detection" content="telephone=no" /&gt;
-										&lt;meta name="description" content="whispers shop SEO 최적화를 위한 메타 디스크립션 제공" /&gt;
-										&lt;meta property="og:type" content="website" /&gt;
-										&lt;meta property="og:title" content="페이지 제목" /&gt;
-										&lt;meta property="og:description" content="whispers shop SEO 최적화를 위한 메타 디스크립션 제공" /&gt;
-										&lt;meta property="og:image" content="http://www.mysite.com/myimage.jpg" /&gt;
-										&lt;meta property="og:url" content="https://www.mysite.com" /&gt;
-										&lt;meta property="og:site_name" content="www.mysite.com" /&gt;
-										&lt;link href="../../img/common/favicon.png" rel="shrtcut icon" /&gt;
-										&lt;link href="../../img/common/favicon.png" rel="apple-touch-icon" /&gt;
-										&lt;link rel="stylesheet" href="../../css/style.css" /&gt;
-										&lt;script src="../../js/jquery-3.6.1.min.js"&gt;&lt;/script&gt;
-										&lt;script src="../../js/jquery-ui.js"&gt;&lt;/script&gt;
-										&lt;script src="../../js/jquery.ui.touch-punch.js"&gt;&lt;/script&gt;
-										&lt;link rel="stylesheet" href="../../plugins/swiper/swiper.css" /&gt;
-										&lt;script src="../../plugins/swiper/swiper.js"&gt;&lt;/script&gt;
-										&lt;script src="../../js/ui.js"&gt;&lt;/script&gt;
-									&lt;/head&gt;
-									&lt;body&gt;
-										&lt;!-- 스킵네비게이션 영역(s) --&gt;
-										&lt;div id="skipNavigation"&gt;
-											&lt;a href="#contents"&gt;본문 바로가기&lt;/a&gt;
-										&lt;/div&gt;
-										&lt;!--// 스킵네비게이션 영역(e) --&gt;
-										&lt;div calss="wrapper" id="wrapper"&gt;
-											&lt;!-- 헤더 영역(s) --&gt;
-											&lt;include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-sch,is-gnb","title":"페이지타이틀"}'&gt;&lt;/include&gt;
-											&lt;!--// 헤더 영역(e) --&gt;
-											&lt;!-- 메뉴 영역(s) --&gt;
-											&lt;include class="gnb" src="../inc/gnb.html"&gt;&lt;/include&gt;
-											&lt;!--// 메뉴 영역(e) --&gt;
-										
-											&lt;!---------------------------- 바디 - 여기위로는 템플릿영역 ----------------------------&gt;
-										
-											&lt;!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 --&gt;
-											&lt;!-- main : 메인/공통 등 추가 --&gt;
-											&lt;main class="container page myp info" id="container"&gt;
-											
-												&lt;!-- 본문 영역 --&gt;
-												&lt;div class="contents" id="contents"&gt;
-													&lt;p&gt;본문&lt;/p&gt;
-												&lt;/div&gt;
-												
-											&lt;/main&gt;
-										
-											&lt;!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 --&gt;
+                      &lt;!DOCTYPE html&gt;
+                      &lt;html lang="ko"&gt;
+                        &lt;head&gt;
+                          &lt;meta charset="UTF-8" /&gt;
+                          &lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;
+                          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+                          &lt;title&gt;상품목록 &gt; 뷰티 | whispers shop&lt;/title&gt; &lt;!-- title 태그안 규칙은 소분류 &gt; 중분류 &gt; 대분류 | 홈페이지 네임 순으로 적용 --&gt;
+                          &lt;meta name="color-scheme" content="dark light" /&gt;
+                          &lt;meta name="description" content="소수자를 위한 쇼핑몰" /&gt;
+                          &lt;meta name="author" content="whispers shop" /&gt;
+                          &lt;meta name="copyright" content="whispers shop" /&gt;
+                          &lt;meta name="keywords" content="whispers shop,청각장애인쇼핑몰" /&gt;
+                          &lt;meta property="og:type" content="website" /&gt;
+                          &lt;meta property="og:title" content="whispers shop" /&gt;
+                          &lt;meta property="og:description" content="소수자를 위한 쇼핑몰" /&gt;
+                          &lt;meta property="og:image" content="/resources/images/og_img.png" /&gt;
+                          &lt;meta property="og:url" content="https://whispershop.netlify.app/" /&gt;
+                          &lt;meta property="og:site_name" content="whispershop.netlify.app" /&gt;
+                          &lt;link rel="stylesheet" href="../../resources/css/style.css" /&gt;
+                      
+                          &lt;link rel="stylesheet" href="../../resources/plugins/swiper/swiper.min.css" /&gt;
+                          &lt;script src="../../resources/plugins/swiper/swiper.min.js"&gt;&lt;/script&gt;
+                          &lt;script src="../../resources/js/ui.js" defer&gt;&lt;/script&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                          &lt;!-- 스킵네비게이션 영역(s) --&gt;
+                          &lt;div id="skipNavigation"&gt;
+                            &lt;a href="#contents"&gt;본문 바로가기&lt;/a&gt;
+                          &lt;/div&gt;
+                          &lt;!--// 스킵네비게이션 영역(e) --&gt;
+                      
+                          &lt;div id="wrapper"&gt;
+                            &lt;div class="container"&gt;
+                              &lt;h1&gt;소수자를 위한 쇼핑몰 | whispers shop&lt;/h1&gt;
+                              &lt;!-- Header 영역(s) --&gt;
+                              &lt;header id="header"&gt;
+                                &lt;button type="button" class="menu-btn" aria-expanded="false"&gt;
+                                  &lt;span&gt;전체메뉴&lt;/span&gt;
+                                &lt;/button&gt;
+                              &lt;/header&gt;
+                              &lt;!--// Header 영역(e) --&gt;
 
-											&lt;script&gt;
-												&lt;!--해당페이지 스크립트 위치--&gt;
-												$(document).ready(function(){
-													console.log('메시지');
-												});
-											&lt;/script&gt;
-
-											&lt;!---------------------------- 바디 - 여기밑으로 템플릿영역 ----------------------------&gt;
-										
-											&lt;!-- 고정메뉴 --&gt;
-											&lt;include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'&gt;&lt;/include&gt;
-										
-											&lt;!-- 하단 영역(s) --&gt;
-											&lt;include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'&gt;&lt;/include&gt;
-											&lt;!--// 하단 영역(e) --&gt;
-										
-										&lt;/div&gt;
-									&lt;/body&gt;
-								&lt;/html&gt;</pre
+                              &lt;!-- Contents 영역(s) --&gt;
+                              &lt;main id="contents"&gt;
+                              &lt;/main&gt;
+                              &lt;!--// Contents 영역(e) --&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/body&gt;
+                      &lt;/html&gt;
+                      </pre
                     >
                   </div>
                 </div>
@@ -1240,7 +1218,10 @@
               </section>
 
               <h3 id="css">CSS 정의</h3>
-              <div class="gtxt-box">CSS는 페이지 로딩시 불필요한 <span class="font_color01">RESOURCE</span>를 줄이기 위해서 <span class="font_color01"> style.css 를 제외한 </span>각 카테고리별 css 를 별도의 css를 생성하여 사용하고 <span class="font_color01"> base.css 는 style.css 에 @import url(base.css)</span> 하여 배치한다. <span class="font_color01">Library</span>를 사용 할 경우 <span class="font_color01">Library css</span> 는 <span class="font_color01">style.css 파일보다 위에</span> 위치한다.</div>
+              <div class="gtxt-box">
+                작업은 SCSS 파일을 <span class="font_color01">컴파일하여 사용</span>한다.<br />
+                CSS는 페이지 로딩시 불필요한 <span class="font_color01">RESOURCE</span>를 줄이기 위해서 <span class="font_color01"> style.css 를 제외한 </span>각 카테고리별 css 를 별도의 css를 생성하여 사용하고 <span class="font_color01"> base.css 는 style.css 에 @import url(base.css)</span> 하여 배치한다. <span class="font_color01">Library</span>를 사용 할 경우 <span class="font_color01">Library css</span> 는 <span class="font_color01">style.css 파일보다 위에</span> 위치한다.
+              </div>
               <section class="sect">
                 <!-- 코드 삽입 -->
                 <div class="codeBox">
@@ -1251,25 +1232,17 @@
 
                   <div class="code">
                     <pre class="brush: html">
-								// style.css 파일에서 임포트
-								@charset "utf-8";
-								@import url("./base.css"); /* 초기화, 폰트 */
-								@import url("./layout.css"); /* 공통 레이아웃 */
-								@import url("./component.css"); /* 공통 UI components */</pre
-                    >
-                  </div>
-                  <h4>일반페이지 작업 - <a class="lk" href="../guide/docs/img/css_sample2.png" target="_blank">SS</a></h4>
-                  <div class="code">
-                    <pre class="brush: html">
-								// 메인 페이지는 .content.main에 일반 페이지는 .content.message" 식으로 class 작명(짧게) 후 상속
-								
-								// 예를들어 KB마음더하기 메인, 단체메인
-								.content.main{}
-								.content.main--group{}
+                      @charset "utf-8";
 
-								// KB마음더하기 마음스토리, 단체소식 이런식으로
-								.content.wide.pt-none{} 
-								.content.wide{}</pre
+                      @import url('./base.css'); /* 초기화, 폰트 */
+                      @import url('./layout.css'); /* 메인, 서브 레이아웃 */
+                      
+                      @import url('./base.css'); /* 초기화, 폰트 */
+                      @import url('./layout.css'); /* 메인, 서브 레이아웃 */
+                      @import url('./button.css'); /* 버튼 */
+                      @import url('./form.css'); /* form 레이아웃 */
+                      @import url('./list.css'); /* 목록 레이아웃 */
+                      @import url('./contents.css'); /* 페이지 컨텐츠 */</pre
                     >
                   </div>
                 </div>
@@ -1284,10 +1257,7 @@
                 <!-- 코드 삽입 -->
                 <div class="codeBox">
                   <div class="code">
-                    <pre class="brush: html">
-								&lt;script src="../../js/library.js"&gt;&lt;/script&gt; 
-								&lt;script src="../../js/ui.js"&gt;&lt;/script&gt;</pre
-                    >
+                    <pre class="brush: html">								&lt;script src="../../resources/js/ui.js" defer&gt;&lt;/script&gt;</pre>
                   </div>
                 </div>
                 <!-- // 코드 삽입 -->
@@ -1339,8 +1309,7 @@
                   <div class="code">
                     <pre class="brush: html">
 								예약어 추가될 예정
-								&lt;main class="main"&gt; 메인 &lt;/main&gt;
-							</pre
+								&lt;main class="main"&gt; 메인 &lt;/main&gt;</pre
                     >
                   </div>
                 </div>
@@ -1368,11 +1337,7 @@
                 <!-- // 코드 삽입 -->
               </section>
               <!-- // 네이밍 정의 2 -->
-            </section>
-            <!--// 기본 정의(e) -->
 
-            <!-- 디렉토리구조(s) -->
-            <section id="directoryInfo" role="tabpanel" aria-labelledby="디렉토리구조" tabindex="0" style="display: none">
               <h3>Devices 검수</h3>
               <div class="box_content type2">
                 <span class="font_color01">Devices 검수</span>는 제공되는 Devices를 대상으로 검수를 진행하도록 하며, 그 이외의 미제공 되는 Devices의 경우 브라우저에서 제공되는 해상도를 포함하여 검수진행한다.
@@ -1381,218 +1346,68 @@
               <h3>기본폴더 구조</h3>
               <div class="example box_content type2"><span class="font_color01">폴더구조</span>는 별도 협의된 구조가 없는 관계로 아래의 폴더구조로 제작되었으며, 필요시<span class="font_color01"> 변경 및 추가 </span>될 수 있있다.</div>
 
-              <h3>브랜드Pay 폴더 구조</h3>
+              <h3>폴더 구조</h3>
               <div class="example box_content type3">
                 <ul class="jqueryFileTree">
                   <li class="directory">
-                    pay
+                    html
                     <ul class="jqueryFileTree">
-                      <li class="directory">html</li>
-                      <li class="directory">
-                        static
-                        <ul class="jqueryFileTree">
-                          <li class="directory">animation (Lottie 파일, gif 애니메이션 파일)</li>
-                          <li class="directory">css</li>
-                          <li class="directory">fonts</li>
-                          <li class="directory">img</li>
-                          <li class="directory">
-                            js
-                            <ul class="jqueryFileTree">
-                              <li class="directory">libs (js 라이브러리)</li>
-                            </ul>
-                          </li>
-                          <li class="directory">scss (whispers shop 고도화 프로젝트 작업 사용. 오픈 후 유지보수 시 사용하지 않음)</li>
-                        </ul>
-                      </li>
+                      <li class="directory">intro</li>
+                      <li class="directory">products</li>
+                      <li class="directory">setup</li>
                     </ul>
                   </li>
-                </ul>
-              </div>
-
-              <h3>KB마음더하기 폴더 구조</h3>
-              <!-- 성금서비스 -->
-              <div class="example box_content type3">
-                <ul class="jqueryFileTree">
                   <li class="directory">
-                    donation
+                    resources
                     <ul class="jqueryFileTree">
-                      <li class="directory">html</li>
-                      <li class="directory">
-                        static
-                        <ul class="jqueryFileTree">
-                          <li class="directory">animation (Lottie 파일, gif 애니메이션 파일)</li>
-                          <li class="directory">css</li>
-                          <li class="directory">fonts</li>
-                          <li class="directory">images (FAQ 이미지)</li>
-                          <li class="directory">img</li>
-                          <li class="directory">
-                            js
-                            <ul class="jqueryFileTree">
-                              <li class="directory">libs (js 라이브러리)</li>
-                            </ul>
-                          </li>
-                          <li class="directory">scss (whispers shop 고도화 프로젝트 작업 사용. 오픈 후 유지보수 시 사용하지 않음)</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-
-              <h3>포탈 폴더 구조</h3>
-              <!-- 포탈  -->
-              <div class="example box_content type3">
-                <ul class="jqueryFileTree">
-                  <li class="directory">
-                    portal
-                    <ul class="jqueryFileTree">
-                      <li class="directory">html</li>
-                      <li class="directory">
-                        static
-                        <ul class="jqueryFileTree">
-                          <li class="directory">animation (Lottie 파일, gif 애니메이션 파일)</li>
-                          <li class="directory">css</li>
-                          <li class="directory">fonts</li>
-                          <li class="directory">images</li>
-                          <li class="directory">
-                            js
-                            <ul class="jqueryFileTree">
-                              <li class="directory">libs (js 라이브러리)</li>
-                            </ul>
-                          </li>
-                          <li class="directory">plugins (플러그인)</li>
-                          <li class="directory">scss (whispers shop 고도화 프로젝트 작업 사용. 오픈 후 유지보수 시 사용하지 않음)</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-
-              <h3>관리센터 폴더 구조</h3>
-              <!-- 관리센터 -->
-              <div class="example box_content type3">
-                <ul class="jqueryFileTree">
-                  <li class="directory">
-                    stdpay
-                    <ul class="jqueryFileTree">
-                      <li class="directory">
-                        static
-                        <ul class="jqueryFileTree">
-                          <li class="directory">
-                            mms
-                            <ul class="jqueryFileTree">
-                              <li class="directory">
-                                css
-                                <ul class="jqueryFileTree">
-                                  <li class="file ext_txt">busy-load-0.1.1.min.css (busy-load)</li>
-                                  <li class="file ext_txt">fullCalendar.min.css (달력)</li>
-                                  <li class="file ext_txt">jquery-confirm.css (jquery-confirm)</li>
-                                  <li class="file ext_txt">jquery-ui.min.css (jquery-UI)</li>
-                                  <li class="file ext_txt">jquery.mCustomScrollbar.min.css (스크롤바)</li>
-                                  <li class="file ext_txt">style.css (페이지스타일)</li>
-                                </ul>
-                              </li>
-                              <li class="directory">fonts (폰트)</li>
-                              <li class="directory">images (이미지)</li>
-                              <li class="directory">
-                                js
-                                <ul class="jqueryFileTree">
-                                  <li class="directory">crypto</li>
-                                  <li class="directory">moment</li>
-                                  <li class="file ext_txt">aesCryptUtil.js</li>
-                                  <li class="file ext_txt">busy-load-0.1.1.min.js</li>
-                                  <li class="file ext_txt">comutil.js</li>
-                                  <li class="file ext_txt">fullCalendar.min.js</li>
-                                  <li class="file ext_txt">jquery-1.12.0.min.js</li>
-                                  <li class="file ext_txt">jquery-confirm-3.3.4.min.js</li>
-                                  <li class="file ext_txt">jquery-ui.min.js</li>
-                                  <li class="file ext_txt">jquery.mCustomScrollbar.concat.min.js</li>
-                                  <li class="file ext_txt">jquery.mtz.monthpicker.js</li>
-                                  <li class="file ext_txt">script.js</li>
-                                </ul>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-
-              <h3>어드민 폴더 구조</h3>
-              <!-- 어드민 -->
-              <div class="example box_content type3">
-                <ul class="jqueryFileTree">
-                  <li class="directory">
-                    admin
-                    <ul class="jqueryFileTree">
-                      <li class="directory">
-                        html
-                        <ul class="jqueryFileTree">
-                          <li class="directory">payment ()</li>
-                        </ul>
-                      </li>
-                      <li class="directory">
-                        static
-                        <ul class="jqueryFileTree">
-                          <li class="directory">
-                            admin
-                            <ul class="jqueryFileTree">
-                              <li class="directory">
-                                css
-                                <ul class="jqueryFileTree">
-                                  <li class="directory">fonts (폰트)</li>
-                                  <li class="file ext_txt">contents.css (공통)</li>
-                                  <li class="file ext_txt">css.css (html 내 선언)</li>
-                                  <li class="file ext_txt">jquery-confirm.css (jquery-confirm)</li>
-                                  <li class="file ext_txt">jquery.datetimepicker.css (datePicker)</li>
-                                  <li class="file ext_txt">layout.css (페이지스타일)</li>
-                                  <li class="file ext_txt">reset.css (스타일 리셋)</li>
-                                </ul>
-                              </li>
-                              <li class="directory">img (이미지)</li>
-                              <li class="directory">
-                                js
-                                <ul class="jqueryFileTree">
-                                  <li class="file ext_txt">extension.js (interaction script)</li>
-                                </ul>
-                              </li>
-                            </ul>
-                          </li>
-                          <li class="directory">
-                            js (플러그인 관련)
-                            <ul class="jqueryFileTree">
-                              <li class="directory">busy-load</li>
-                              <li class="directory">
-                                comm
-                                <ul class="jqueryFileTree">
-                                  <li class="file ext_txt">comutil.js (페이지 제어)</li>
-                                </ul>
-                              </li>
-                              <li class="directory">
-                                jquery
-                                <ul class="jqueryFileTree">
-                                  <li class="file ext_txt">jquery-1.12.4.min.js</li>
-                                </ul>
-                              </li>
-                              <li class="directory">jquery-confirm</li>
-                              <li class="directory">jquery-datetimepicker</li>
-                              <li class="directory">moment</li>
-                              <li class="directory">summernote</li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
+                      <li class="directory">css</li>
+                      <li class="directory">fonts</li>
+                      <li class="directory">images</li>
+                      <li class="directory">js</li>
+                      <li class="directory">plugins</li>
+                      <li class="directory">scss</li>
                     </ul>
                   </li>
                 </ul>
               </div>
             </section>
-            <!--// 디렉토리구조(e) -->
+            <!--// 기본 정의(e) -->
+
+            <!-- 페이지 가이드(s) -->
+            <section id="directoryInfo" role="tabpanel" aria-labelledby="페이지 가이드" tabindex="0" style="display: none">
+              <h3>안내</h3>
+              <div class="box_content type2"><span class="font_color01">주요 페이지</span>에 대한 가이드를 제공한다.</div>
+              <h3>기본폴더 구조</h3>
+              <div class="example box_content type2"><span class="font_color01">폴더구조</span>는 별도 협의된 구조가 없는 관계로 아래의 폴더구조로 제작되었으며, 필요시<span class="font_color01"> 변경 및 추가 </span>될 수 있있다.</div>
+
+              <h3>폴더 구조</h3>
+              <div class="example box_content type3">
+                <ul class="jqueryFileTree">
+                  <li class="directory">
+                    html
+                    <ul class="jqueryFileTree">
+                      <li class="directory">intro</li>
+                      <li class="directory">products</li>
+                      <li class="directory">setup</li>
+                    </ul>
+                  </li>
+                  <li class="directory">
+                    resources
+                    <ul class="jqueryFileTree">
+                      <li class="directory">css</li>
+                      <li class="directory">fonts</li>
+                      <li class="directory">images</li>
+                      <li class="directory">js</li>
+                      <li class="directory">plugins</li>
+                      <li class="directory">scss</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <!--// 페이지 가이드(e) -->
           </div>
-          <!-- // 주요 페이지 가이드 정의 2(e) -->
+          <!-- // 마크업 가이드 정의 2(e) -->
 
           <!-- 모바일 디바이스해상도 2(s) -->
           <div class="box">
