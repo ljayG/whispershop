@@ -183,9 +183,10 @@ b {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-* {
-  outline-color: rgb(0 114 255 / 20%);
-  outline-width: 0;
+:focus-visible {
+  /* outline-color: rgb(0 114 255 / 20%);
+  outline-width: 0; */
+  outline: dashed 2px #2189ff;
 }
 ::-ms-clear {
   display: none;
